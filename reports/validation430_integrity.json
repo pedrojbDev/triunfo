@@ -1,0 +1,18 @@
+{
+  "archive": "validation430_results.zip",
+  "archive_sha256": "97caf0bf68529ffb62047617e224c5e4fcfa30068c686b4d5e2ce9e9af1cf4a6",
+  "verified_cases_per_condition": 430,
+  "verified": [
+    "Arquivo ZIP íntegro.",
+    "IDs únicos iguais ao conjunto de 430 referências chamadas únicas de validação.",
+    "Referências e métricas de cada previsão reconferidas com o avaliador versionado.",
+    "Revisão do modelo, instrução, parâmetros de geração e IDs iguais entre condições.",
+    "Quantidade de tokens de entrada igual para cada par.",
+    "Contagens 248/242/156 e 402/395/273, ganhos 127 e regressões 10 reconferidos."
+  ],
+  "files": {
+    "base_validation430.json": "994f213dda2f2901b415de5f1e065af27469df1e30139aa6d2f77b2dba445605",
+    "finetuned_validation430.json": "d6460b110c50eac745b1637093749f3ca74b46d29a114d8354b02d124e4653a7",
+    "comparison_validation430_summary.json": "79a52597505720acc09bd5e01ba2b7c506895017ebd38d2ebc24787954df7d85"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "cases": 430,
+  "scope": "validation_single_call_full",
+  "counts": {
+    "base": {
+      "parseable_call": 248,
+      "tool_correct": 242,
+      "call_exact": 156
+    },
+    "finetuned": {
+      "parseable_call": 402,
+      "tool_correct": 395,
+      "call_exact": 273
+    }
+  },
+  "rates": {
+    "base": {
+      "parseable_call": 0.5767,
+      "tool_correct": 0.5628,
+      "call_exact": 0.3628
+    },
+    "finetuned": {
+      "parseable_call": 0.9349,
+      "tool_correct": 0.9186,
+      "call_exact": 0.6349
+    }
+  },
+  "exact_improved_cases": 127,
+  "exact_regressed_cases": 10,
+  "reached_token_limit": {
+    "base": 0,
+    "finetuned": 0
+  },
+  "reused_preliminary_cases_per_condition": 32,
+  "textual_validation_examples_not_scored_here": 129,
+  "test_used": false
+}

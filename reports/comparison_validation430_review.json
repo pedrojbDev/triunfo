@@ -1,0 +1,102 @@
+{
+  "scope": "Revisão das dez regressões segundo call_exact; rótulos e métrica original preservados.",
+  "regressions": [
+    {
+      "example_id": "262cddd4206f28d859ce5be8b012a8a74d0528fc79a52c130d480db3b8597c50",
+      "original_index": 9316,
+      "request": "I heard about this new place called \"Taste of Italy\" in downtown. Can you find some reviews for it?",
+      "base_prediction": "[get_restaurant_reviews(location=\"downtown\", restaurant_name=\"Taste of Italy\")]",
+      "finetuned_prediction": "The function `get_restaurant_reviews` can be used to get reviews for \"Taste of Italy,\" but it lacks the required `\"location\"` parameter. Please provide the location where \"Taste of Italy\" is located.",
+      "reference": "[get_restaurant_reviews(restaurant_name=\"Taste of Italy\", location=\"downtown\")]",
+      "review_note": "Solicita localização apesar de downtown no pedido; a localização também é vaga no gabarito."
+    },
+    {
+      "example_id": "726d19bbf5119a7d8c368819624de32b3f9c39a75eb769bff32a37255eac09ca",
+      "original_index": 5762,
+      "request": "Please provide the most recent 30 messages for the Tesla stock.",
+      "base_prediction": "[Get Recent Stock Messages(symbol=\"TSLA\")]",
+      "finetuned_prediction": "[Get Recent Stock Messages(symbol=\"Tesla\")]",
+      "reference": "[Get Recent Stock Messages(symbol=\"TSLA\")]",
+      "review_note": "Usa Tesla no campo de ticker em vez de TSLA."
+    },
+    {
+      "example_id": "7eb6ce834b339f3df1992c2b2cc4e2571881cc540970c3445bae725040178f65",
+      "original_index": 4887,
+      "request": "Can you provide me with the gender statistics for the workforce in Germany for 2021?",
+      "base_prediction": "[getGenderStats(category=\"workforce\", country=\"Germany\", year=2021)]",
+      "finetuned_prediction": "[getGenderStats(country=\"Germany\", year=2021)]",
+      "reference": "[getGenderStats(country=\"Germany\", year=2021, category=\"workforce\")]",
+      "review_note": "Omite category=workforce, explicitamente indicada no pedido."
+    },
+    {
+      "example_id": "8523a0dd4ac08218197d4675bf57565dcde194d43829b5d437f3476a30edf4bc",
+      "original_index": 1327,
+      "request": "Could you please provide me with detailed information on the stock symbol AAPL and its associated options data?",
+      "base_prediction": "[StockAndOptionsData(ticker=\"AAPL\")]",
+      "finetuned_prediction": "[Options(symbol=\"AAPL\")]",
+      "reference": "[StockAndOptionsData(ticker=\"AAPL\")]",
+      "review_note": "Escolhe Options em vez de StockAndOptionsData."
+    },
+    {
+      "example_id": "868adef13d4762c4267edafca11ec3fc4327073132727470b02f47a6d31cb5f5",
+      "original_index": 2433,
+      "request": "I need to verify the consistency of our latest smoothie mix batch. The product ID is SM12345, and the total batch size is 1500 liters. Can you provide the consistency data for today?",
+      "base_prediction": "[homogenizer.validate_mix_consistency(product_details={\"product_id\": \"SM12345\", \"batch_size\": 1500})]",
+      "finetuned_prediction": "The function `homogenizer.validate_mix_consistency` can validate the consistency of your smoothie mix batch, but it lacks the necessary arguments. Specifically, it requires the `product_details` parameter with the `product_id` and `batch_size`. Please provide these details so I can proceed with the validation.",
+      "reference": "[homogenizer.validate_mix_consistency(product_details={\"product_id\": \"SM12345\", \"batch_size\": 1500})]",
+      "review_note": "Pede product_details apesar de produto e tamanho constarem no pedido."
+    },
+    {
+      "example_id": "9054bd49543226023e1c9410bf90c667279efee5f1db83f511b636a4f63e0d44",
+      "original_index": 4867,
+      "request": "I am planning a trip to Paris from October 10 to October 15. Can you give me some travel tips for that period?",
+      "base_prediction": "[TravelAdvisor.getTravelTips(destination=\"Paris\", travelPeriod={\"startDate\":\"2022-10-10\",\"endDate\":\"2022-10-15\"})]",
+      "finetuned_prediction": "[TravelAdvisor.getTravelTips(destination=\"Paris\", travelPeriod={\"startDate\": \"2023-10-10\", \"endDate\": \"2023-10-15\"})]",
+      "reference": "[TravelAdvisor.getTravelTips(destination=\"Paris\", travelPeriod={\"startDate\": \"2022-10-10\", \"endDate\": \"2022-10-15\"})]",
+      "review_note": "Ano 2023 em vez de 2022 do gabarito; o pedido não informa ano. Não concluir erro semântico apenas pela igualdade."
+    },
+    {
+      "example_id": "958d78d622bd671c808a05bc105092dd71c68d56308897194ada7623ebabe659",
+      "original_index": 6564,
+      "request": "Can you get the media for the soccer event with ID 712345?",
+      "base_prediction": "[Get Event Media(event_id=712345.0, locale=\"EN\", sport=\"soccer\")]",
+      "finetuned_prediction": "The function \"Get Event Media\" can be used to retrieve the media for the soccer event with ID 712345, but it lacks the required arguments \"locale\" and \"sport\". Please provide the locale and sport for this event.",
+      "reference": "[Get Event Media(sport=\"soccer\", locale=\"EN\", event_id=712345.0)]",
+      "review_note": "Pede sport e locale; soccer está no pedido e locale tem default EN no schema."
+    },
+    {
+      "example_id": "a2caa2cdb95d1237abde522a7b6505230be8830940ebb5d0c5cbb8369a4b99d5",
+      "original_index": 9859,
+      "request": "I just got a tax bill for my business, which is $30,000. I'm eligible for a seasonal discount of 5%. Can you calculate how much I'll have to pay after the discount?",
+      "base_prediction": "[calculate_discounted_tax(original_tax=30000, discount_percentage=5)]",
+      "finetuned_prediction": "[calculate_discounted_tax(original_tax=30000.0, discount_percentage=0.05)]",
+      "reference": "[calculate_discounted_tax(original_tax=30000, discount_percentage=5)]",
+      "review_note": "Usa 0.05 em vez de 5 para 5%; schema define percentual como 10 para 10%."
+    },
+    {
+      "example_id": "ca9362cddf3f6a59fa943abc6f1162a2fc51dee9c7a2861dd09e54c4aa2bbf02",
+      "original_index": 10727,
+      "request": "I want to get a detailed list of awards won by the director with ID 1234 over their career.",
+      "base_prediction": "[fetch_director_awards(directorInfo={\"director_id\": 1234})]",
+      "finetuned_prediction": "The function `fetch_director_awards` can provide you with the details of awards won by the director with ID 1234, but it lacks the necessary parameters such as `awardYear`. Please provide the specific year(s) for which you would like to retrieve the awards.",
+      "reference": "[fetch_director_awards(directorInfo={\"director_id\": 1234})]",
+      "review_note": "Solicita awardYear que é opcional no schema."
+    },
+    {
+      "example_id": "ce422b11ff9a998ddede99fb7178e0554f432291d11e31e84edb47cf8f191117",
+      "original_index": 2285,
+      "request": "Can you tell me the distance between LAX and JFK airport?",
+      "base_prediction": "[Distance Between Airports(iata_airport_from=\"LAX\", iata_airport_to=\"JFK\")]",
+      "finetuned_prediction": "[Distance Between Airports(iata_airport_to=\"LAX\", iata_airport_from=\"JFK\")]",
+      "reference": "[Distance Between Airports(iata_airport_to=\"JFK\", iata_airport_from=\"LAX\")]",
+      "review_note": "Inverte origem e destino. Divergência exata confirmada; pode ser equivalente para uma distância simétrica, sem execução de API para confirmar."
+    }
+  ],
+  "limitations": [
+    "430 chamadas únicas do conjunto de validação; inclui os 32 casos preliminares reaproveitados.",
+    "129 respostas fora dos colchetes ainda não avaliadas; teste permanece reservado.",
+    "Igualdade JSON estrita não mede equivalência funcional e distingue inteiros de decimais.",
+    "Algumas referências contêm datas ou convenções não determinadas no pedido.",
+    "As dez regressões não são todas erros semânticos inequívocos."
+  ]
+}
