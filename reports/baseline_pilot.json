@@ -1,0 +1,17 @@
+{
+  "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "example_id": "012b04ce808b969667127de88a84968762d9c12d8b61dd06c76ac18b05bbf020",
+  "original_index": 8621,
+  "selection": "Primeiro exemplo de validação com formato chamada_unica.",
+  "do_sample": false,
+  "max_new_tokens": 768,
+  "input_tokens": 626,
+  "generated_tokens": 38,
+  "first_generation_seconds": 4.7,
+  "ended_with_eos": true,
+  "reached_token_limit": false,
+  "request": "I'm planning a bike ride and would like to keep it within the daylight hours. Can you tell me when the sun will rise and set today at my current location in San Francisco?",
+  "prediction": "[Get Sunrise and Sunset Times(latitude=37.7689,-122.4052,string=\"today\",timezone=\"America/Los_Angeles\")]",
+  "reference": "[Get Sunrise and Sunset Times(string=\"2024-05-14\", latitude=37.7749, longitude=-122.4194)]"
+}

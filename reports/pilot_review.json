@@ -1,0 +1,15 @@
+{
+  "original_index": 8621,
+  "observation": "Geração terminou com EOS, sem alcançar o limite. Chamada inválida: valor posicional após argumento nomeado.",
+  "reference_limitations": [
+    "Pedido usa today sem fornecer data de referência, mas gabarito usa2024-05-14.",
+    "Coordenadas exatas do gabarito não estão explicitadas no pedido.",
+    "timezone é opcional; divergência em relação ao gabarito não comprova erro semântico."
+  ],
+  "tool_required_arguments": [
+    "string",
+    "latitude",
+    "longitude"
+  ],
+  "interpretation": "Um exemplo não estima desempenho geral. Correspondência exata mede fidelidade à referência e não comprova correção no mundo real. Não remover o caso para melhorar métricas."
+}
