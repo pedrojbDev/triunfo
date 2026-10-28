@@ -1,0 +1,93 @@
+{
+  "scope": "Revisão qualitativa dos 12 casos previamente selecionados com semente 42; não é taxa de acerto dos 129 exemplos.",
+  "review_method": "Revisão qualitativa descritiva, sem segunda revisão independente ou medida de concordância entre avaliadores.",
+  "rubric": "Verificar adequação da ferramenta, dados obrigatórios presentes/ausentes/defaults, pedidos desnecessários, argumentos ou resultados inventados e ambiguidades de referência.",
+  "no_population_accuracy_estimate": true,
+  "primary_metric_changed": false,
+  "cases": [
+    {
+      "example_id": "3e409e3bf62c702c4419a6525b0dc8adc9352281b1f12a9b78b72f9ee56836c9",
+      "original_index": 2706,
+      "base_assessment": "partial",
+      "finetuned_assessment": "partial",
+      "finding": "Ambos solicitam informações pertinentes, mas omitem campos obrigatórios e tratam descrição opcional como necessária. Original não pede proprietário/data; ajustado não pede nome da marca/data."
+    },
+    {
+      "example_id": "17a5405a3cd28158d52d6be521059f32b305d53a7efd3dd30fd017017e946e1f",
+      "original_index": 6931,
+      "base_assessment": "incorrect",
+      "finetuned_assessment": "incorrect",
+      "finding": "Original propõe ferramenta de status de arquivo e estrutura de retorno inventada. Ajustado chama Inbound SMS History com chave placeholder não fornecida; deveria solicitar p, sem tratá-lo como credencial disponível."
+    },
+    {
+      "example_id": "a515b6d899141b3d5b8f7999ec95816459027d9d855a8e25b286bd039d421178",
+      "original_index": 2082,
+      "base_assessment": "adequate",
+      "finetuned_assessment": "adequate",
+      "finding": "Ambos pedem simulation_id ausente e não tentam executar a função."
+    },
+    {
+      "example_id": "8fec557698b949e3e72d9edad8eb5b5ded6c038085552465e3e9b0e75ea94a89",
+      "original_index": 2529,
+      "base_assessment": "adequate",
+      "finetuned_assessment": "incorrect",
+      "finding": "Original pede username. Ajustado afirma que max_id opcional pode substituir username obrigatório, o que contradiz o schema."
+    },
+    {
+      "example_id": "75ba55c865514ff1fa19cf9657fd033affc5f5b29186a7b9dbe3b4031c2cefd7",
+      "original_index": 7802,
+      "base_assessment": "adequate",
+      "finetuned_assessment": "incorrect",
+      "finding": "Original distingue simulação de perda de pacotes de medição de velocidade. Ajustado sugere fornecer parâmetros do simulador como caminho para medir velocidade, uma capacidade não disponível."
+    },
+    {
+      "example_id": "4f923c25c09fbbbfeb8110ac22c5a3ffe0674c03b129ff19b99e82642243bf9a",
+      "original_index": 8200,
+      "base_assessment": "incorrect",
+      "finetuned_assessment": "adequate_with_caveat",
+      "finding": "Original inventa channel_id e passa query como objeto onde o schema exige string. Ajustado reconhece ausência de busca direta de música; sugestão genérica de mais detalhes não estabelece uma integração disponível."
+    },
+    {
+      "example_id": "3b13e097fb4ca642b0188a49ec95997e1aeff8055f9e82b7265a53ce10a4f882",
+      "original_index": 7152,
+      "base_assessment": "partial",
+      "finetuned_assessment": "adequate",
+      "finding": "Original pede localização e data corrente, sem o intervalo desejado. Ajustado pede location e dateRange com início e fim corretamente."
+    },
+    {
+      "example_id": "2e1bc26d048e1f3d4313eb426655c5a3b8bd1de798f8dd33e532eca5d4efe3a4",
+      "original_index": 5516,
+      "base_assessment": "adequate_but_vague",
+      "finetuned_assessment": "adequate",
+      "finding": "Original solicita dados detalhados, mas não explica formato. Ajustado informa os campos do array e os valores aceitos; a referência a opções na pergunta é imprecisa, pois estão no schema."
+    },
+    {
+      "example_id": "e16703b73026f1311ad0497db0872c22bca98a70f6efc232eb8318e4c740fcd1",
+      "original_index": 11010,
+      "base_assessment": "partial",
+      "finetuned_assessment": "incorrect",
+      "finding": "Original reconhece falta de ferramenta para ofertas, mas termina pedindo datas e tamanhos de grupo irrelevantes. Ajustado trata oferta como problema de parâmetros de reserva e diz que nomes não foram dados, apesar dos três restaurantes no pedido."
+    },
+    {
+      "example_id": "1f23426cbf21870d05dbe95dad53fe2d2a33e9b3be0f6198c7416dc1de854dbc",
+      "original_index": 8471,
+      "base_assessment": "adequate",
+      "finetuned_assessment": "adequate",
+      "finding": "Ambos explicam corretamente que as ferramentas disponíveis não consultam loteria."
+    },
+    {
+      "example_id": "1d3e0ec90ac8fb3d25245d1e954835df2bc4ef3900862446ea71c930c6438e34",
+      "original_index": 9594,
+      "base_assessment": "adequate_with_caveat",
+      "finetuned_assessment": "adequate_with_caveat",
+      "finding": "Ambos reconhecem ausência de ferramenta para hora atual. Atribuir isso a parâmetros faltantes é genérico e desnecessário; a própria referência também mistura esses motivos."
+    },
+    {
+      "example_id": "3080ca203c3baf249d5139d8a35eff14f051bff0ad9c905f98c2cbcefc91a6bd",
+      "original_index": 5727,
+      "base_assessment": "partial",
+      "finetuned_assessment": "partial",
+      "finding": "Original pede os três campos obrigatórios do calculateInsurancePremium, mas também apresenta opcionais como necessários. Ajustado pede cargo_value e opcionais sem ship_value/voyage_distance; não identifica voyage_type exigido pela alternativa."
+    }
+  ]
+}

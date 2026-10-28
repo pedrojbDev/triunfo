@@ -1,0 +1,16 @@
+{
+  "cases": 129,
+  "scope": "validation_outside_brackets",
+  "known_single_call_outputs": {
+    "base": 20,
+    "finetuned": 13
+  },
+  "reached_token_limit": {
+    "base": 0,
+    "finetuned": 0
+  },
+  "review_sample_size": 12,
+  "semantic_review_status": "pending",
+  "interpretation": "As contagens descrevem apenas chamadas únicas reconhecidas. Não são taxas de acerto, recusa correta ou chamadas indevidas. Texto livre também pode estar errado; sintaxes não reconhecidas podem conter chamadas.",
+  "test_used": false
+}

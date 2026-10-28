@@ -1,0 +1,11 @@
+{
+  "archive_sha256": "9bf9c228f7726ce89c5e6085fc62aacaa698653cfb89bc4fb7a6c987ec8d7042",
+  "paired_cases_verified": 129,
+  "known_single_call_outputs": {
+    "base": 20,
+    "finetuned": 13
+  },
+  "sample_selection_verified": true,
+  "same_inputs_and_generation_verified": true,
+  "interpretation": "Contagens do parser não medem correção semântica. Revisão qualitativa encontrou falhas relevantes em ambos e resultados mistos após LoRA."
+}
