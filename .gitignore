@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+.DS_Store
+.vscode/
+.idea/
+
+# Downloaded datasets and generated model files
+data/
+artifacts/
+checkpoints/
+weights/
+wandb/
+runs/
+*.safetensors
+*.pt
+*.pth
+*.bin
