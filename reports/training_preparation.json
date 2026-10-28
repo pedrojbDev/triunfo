@@ -1,0 +1,9 @@
+{
+  "training_examples": 4469,
+  "max_seq_length": 2048,
+  "maximum_observed_tokens": 1711,
+  "median_supervised_tokens": 26,
+  "minimum_supervised_tokens": 5,
+  "truncated_examples": 0,
+  "loss_scope": "assistant_response_and_chat_ending"
+}

@@ -1,0 +1,37 @@
+{
+  "completed_optimizer_steps": 3,
+  "batch_size": 1,
+  "learning_rate": 0.0001,
+  "gradient_checkpointing": true,
+  "mixed_precision": "float16",
+  "initial_adapter_state_restored": true,
+  "steps": [
+    {
+      "step": 1,
+      "example_id": "6002914facba8adefe5833261e3508756ac2aaecd96f5fd9c15e57c2b61f159a",
+      "tokens": 1711,
+      "loss": 0.9575,
+      "gradient_norm_before_clipping": 2.1744,
+      "seconds": 2.92,
+      "gpu_peak_allocated_gib": 6.44
+    },
+    {
+      "step": 2,
+      "example_id": "3434682a252e0ef9b57ee213397bf35a0254a7f8a12fead2a8cf15deb3bf45ea",
+      "tokens": 436,
+      "loss": 0.1448,
+      "gradient_norm_before_clipping": 4.531,
+      "seconds": 1.1,
+      "gpu_peak_allocated_gib": 6.44
+    },
+    {
+      "step": 3,
+      "example_id": "0c630ff3afd05998e252c9278bdc68521c63750d725af8c990b863b0bab71757",
+      "tokens": 562,
+      "loss": 0.8354,
+      "gradient_norm_before_clipping": 8.4036,
+      "seconds": 0.66,
+      "gpu_peak_allocated_gib": 6.44
+    }
+  ]
+}

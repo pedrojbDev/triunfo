@@ -1,0 +1,22 @@
+{
+  "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "rank": 16,
+  "alpha": 32,
+  "dropout": 0.05,
+  "target_modules": [
+    "q_proj",
+    "k_proj",
+    "v_proj",
+    "o_proj"
+  ],
+  "matched_modules": 112,
+  "total_parameters_with_adapters": 1548072448,
+  "trainable_parameters": 4358144,
+  "trainable_percent": 0.2815,
+  "trainable_dtypes": [
+    "torch.float32"
+  ],
+  "gpu_allocated_gib": 2.9,
+  "optimizer_steps": 0
+}
