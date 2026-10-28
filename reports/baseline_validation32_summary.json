@@ -1,0 +1,27 @@
+{
+  "phase": "base",
+  "sample_size": 32,
+  "selection_seed": 42,
+  "eligible_format": "chamada_unica",
+  "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "counts": {
+    "parseable_call": 21,
+    "tool_correct": 21,
+    "call_exact": 16
+  },
+  "rates": {
+    "parseable_call": 0.6562,
+    "tool_correct": 0.6562,
+    "call_exact": 0.5
+  },
+  "reached_token_limit": 0,
+  "median_generation_seconds": 1.04,
+  "provenance": "Resumo da execução no Colab compartilhado pelo usuário; previsões individuais ainda aguardam transferência.",
+  "limitations": [
+    "Amostra preliminar de 32 casos; não estima desempenho de toda a base.",
+    "Somente chamadas únicas; respostas textuais não avaliadas nesta rodada.",
+    "Correspondência exata é alinhamento à referência, não correção semântica comprovada."
+  ],
+  "generation_warning": "Transformers avisou que misturar generation_config e argumentos de geração será removido. Todas as 32 gerações foram concluídas. Próximas execuções devem usar apenas uma forma mantendo os valores efetivos."
+}
