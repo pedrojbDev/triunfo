@@ -1,0 +1,21 @@
+{
+  "execution_environment": "Google Colab",
+  "python": "3.13.16",
+  "packages": {
+    "torch": "2.11.0+cu130",
+    "transformers": "5.20.2",
+    "peft": "0.21.2",
+    "trl": null,
+    "accelerate": "1.15.0",
+    "bitsandbytes": null,
+    "datasets": "4.8.5"
+  },
+  "gpu": {
+    "available": true,
+    "name": "Tesla T4",
+    "total_memory_gib_rounded": 14.6,
+    "torch_cuda_version": "13.0"
+  },
+  "source": "Saída da célula de inspeção executada no Colab.",
+  "status": "Ambiente observado; carregamento e compatibilidade do modelo ainda não testados."
+}
