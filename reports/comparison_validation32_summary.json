@@ -1,0 +1,28 @@
+{
+  "cases": 32,
+  "baseline_counts": {
+    "parseable_call": 21,
+    "tool_correct": 21,
+    "call_exact": 16
+  },
+  "finetuned_counts": {
+    "parseable_call": 30,
+    "tool_correct": 30,
+    "call_exact": 24
+  },
+  "finetuned_rates": {
+    "parseable_call": 0.9375,
+    "tool_correct": 0.9375,
+    "call_exact": 0.75
+  },
+  "exact_improved_cases": 8,
+  "exact_regressed_cases": 0,
+  "reached_token_limit": 0,
+  "predictions_sha256": "0d16f6a43a45920d3d1c1fe8e1b5497f253c511ed791be909686ab79cddf39fe",
+  "limitations": [
+    "Amostra preliminar de 32 chamadas únicas; não mede respostas textuais nem desempenho geral.",
+    "Zero regressões refere-se apenas à métrica call_exact nesta amostra. Um caso pode piorar em estrutura e continuar incorreto nos dois modelos.",
+    "Comparação JSON estrita distingue 120 de 120.0; um dos oito ganhos exatos decorre dessa distinção.",
+    "Gabaritos sintéticos incluem datas subespecificadas e exemplos semanticamente incoerentes."
+  ]
+}

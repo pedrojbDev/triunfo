@@ -1,0 +1,39 @@
+{
+  "scope": "Revisão qualitativa após comparação preliminar. Sem alteração dos rótulos ou do avaliador.",
+  "corrected_examples": [
+    {
+      "original_index": 5908,
+      "finding": "Texto LAX agora está entre aspas, formando argumento literal legível."
+    },
+    {
+      "original_index": 9170,
+      "finding": "Remove texto e bloco Markdown extras e retorna somente chamada correta."
+    },
+    {
+      "original_index": 2734,
+      "finding": "Converte pedido em chamada com estrutura aninhada e valores iguais à referência."
+    }
+  ],
+  "limitations_examples": [
+    {
+      "original_index": 2466,
+      "finding": "Ganho exato vem somente de int para float: 120/25 versus 120.0/25.0; não prova melhora funcional."
+    },
+    {
+      "original_index": 2731,
+      "finding": "Ambos falham call_exact; no ajustado, start_year/end_year saem do objeto period e passam ao nível superior. Portanto ausência de regressões exatas não significa ausência de deterioração parcial."
+    },
+    {
+      "original_index": 7704,
+      "finding": "Ferramenta corrigida, mas faltam location e checkin. Ano do gabarito não é fornecido no pedido."
+    },
+    {
+      "original_index": 1749,
+      "finding": "Pedido de frequências descritas como datas é semanticamente incoerente; preservado na avaliação sem excluir após resultado."
+    },
+    {
+      "original_index": 6489,
+      "finding": "Modelo ajustado pede uma lista que poderia estruturar a partir do pedido, em vez de retornar a chamada."
+    }
+  ]
+}

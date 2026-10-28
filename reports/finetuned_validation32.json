@@ -1,0 +1,535 @@
+{
+  "protocol": {
+    "phase": "lora_epoch1_recovery",
+    "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+    "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "seed": 42,
+    "example_ids": [
+      "ca3f7c15355f26ed35927d4e10848577646fdc2a3790eb9cba420303f37b7a68",
+      "22688cd4b1952c1c89b35662af6919576eaf05c8690c47d1f2f0c85b2bce80fb",
+      "09651707292f0c5cec4a5e6da39735a98b9d17d9324e7f4716ef1a4b09ad714c",
+      "e166c1e7a2a05a80ce31d5852bc691702604545b93cb8d852f942ad2c0c18722",
+      "5938f4d5edbce5c2fe633b8eb2bd69f6f204f96008112f5b9897e0cf05a708c1",
+      "4ff8c203483e0919ff613cd3a345ad5ed9fbdbca579362f06d8616801aa70fc4",
+      "49386ea969448cfabe4cf53ac5efbde1845b83700d4563761f38fd3d7373ad03",
+      "2f32b2d3c67a5c9d573eaf78fa9b3ff68906c7c4af4e6e8877a8aca941490eab",
+      "dff2b9110c2d2b29bf9c48e2dbdb1732036e287ba3c29a079b8cf1e5fffca34d",
+      "1f3bf700a8046b1e3baa432cc9aabb83f1d96154d2dd87f9be5bf0981226338e",
+      "cff4df60468e89e60f13a761438f1e9dcc233c94a01ba7501c85e220bb8f8375",
+      "adab1c4aa00d073eef6290876ee2ee4b724a9e6808b4ba7777a2ce367112da2c",
+      "1aeaa1e78615611929dfc51b975abe6247083eb2b562e05dcb3813dd508b1e79",
+      "be5da637794b5a2c0ee81ad913c683ff2a0c841ea27b9187fbc8f7e4f55e7081",
+      "856e7288fb50dfe07149cf00162d4352bbd0bede5ae6e628fa443f07319f027b",
+      "0a3e3ab1674bf1ec7ac8056cd50c94026a80366009bc89816967d6bdf04f4f98",
+      "09e56452d847042a90194d8c334b5bcfbcd4ec7405f1d6f43cf921c9b20d14f1",
+      "1d3f91f2ed6704516cb645a3c55c620566728fe7455bb1a020f0cb2b8047227c",
+      "47b4876283f1e5c800c4f8b81bc320518bd8aa7ec13a79ee393207f6394eb484",
+      "4d5b375e5caf852686868ae8acfc321fd41d080c34ba6cfa82924e65b2d553ea",
+      "a04ad39c0975eb573941264fc15724772cbb9365e53a58f3eea21d7fd074ca19",
+      "c0089c5b6adaa52fc0fa85efac31df4df316c30edb9486b7e248fd49d91ecfd5",
+      "09aebd89c7faf120287d6529fddcc57b717ce14bed67c75115a9b31b4927da7f",
+      "b1be685331eb9e2e44a24ec0945a4aba72d0629557a878118751e916397c9f9e",
+      "41fb12a43f77b9d639bce6f8cca487970f561bdc0011b734ed21b1cb5ea09428",
+      "d7df1f6efab5564d8fb1d9aa0baf19f2cb98d1cea3b008c2efc18289765091ce",
+      "cbac90548db1556b41c6e343e9e22dbfaa64c8bbb125291a506da00bc95b3366",
+      "d5084cf6a45912541d4003e5814fd83ef8c383774490a31855a25cacacca5ae6",
+      "852b75158e0de8b5c51685465db4369b77ff6063ea2bccbc56a25f75704148e0",
+      "47c1f92bd1709f7b2550c0c2c552235822ea344b6bc99ae5016e3c09ea10b3da",
+      "896170202db09b5aa3c2eb5a64b818de93f49f17d26db9df92f240200ede83a3",
+      "be5393005dcf029fb7c1660836202998be80b68f324d9ea43c0d79d92cf6fdb6"
+    ],
+    "instruction_sha256": "5a019eaf6e9372e075f42d701de88c091613322a05afb7010e9cd899aee76bd7",
+    "generation": {
+      "do_sample": false,
+      "num_beams": 1,
+      "max_new_tokens": 768,
+      "temperature": 1.0,
+      "top_p": 1.0,
+      "top_k": 50
+    },
+    "adapter_sha256": "e7fd91061c8f1862cb682608c5baba4ac9002f9f12cc3914c2f1546bb1752640",
+    "baseline_sha256": "d7c8612328725f87aca42016f025e165f6b6d7f7534699ec3b369c682347fd97"
+  },
+  "results": [
+    {
+      "example_id": "ca3f7c15355f26ed35927d4e10848577646fdc2a3790eb9cba420303f37b7a68",
+      "original_index": 2731,
+      "prediction": "[history.get_ancient_battles(region=\"Gaul\", start_year=58, end_year=50)]",
+      "reference": "[history.get_ancient_battles(region=\"Gaul\", period={\"start_year\": -58, \"end_year\": -50})]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": false
+      },
+      "input_tokens": 284,
+      "generated_tokens": 26,
+      "generation_seconds": 1.768,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "22688cd4b1952c1c89b35662af6919576eaf05c8690c47d1f2f0c85b2bce80fb",
+      "original_index": 4241,
+      "prediction": "[GetBitcoinNews(start_string=\"2023-04-05\", end_string=\"2023-04-12\")]",
+      "reference": "[Get Bitcoin News(start_string=\"2022-02-09\", end_string=\"2022-02-16\")]",
+      "metrics": {
+        "parseable_call": false,
+        "tool_correct": false,
+        "call_exact": false
+      },
+      "input_tokens": 677,
+      "generated_tokens": 33,
+      "generation_seconds": 2.016,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "09651707292f0c5cec4a5e6da39735a98b9d17d9324e7f4716ef1a4b09ad714c",
+      "original_index": 3464,
+      "prediction": "[Get Most Watched Prostrings()]",
+      "reference": "[Get Most Watched Prostrings()]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": true
+      },
+      "input_tokens": 678,
+      "generated_tokens": 9,
+      "generation_seconds": 0.635,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "e166c1e7a2a05a80ce31d5852bc691702604545b93cb8d852f942ad2c0c18722",
+      "original_index": 1654,
+      "prediction": "[Retrieve Active Listings for a Collection(slug=\"CryptoCowboys\")]",
+      "reference": "[Retrieve Active Listings for a Collection(slug=\"CryptoCowboys\")]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": true
+      },
+      "input_tokens": 597,
+      "generated_tokens": 14,
+      "generation_seconds": 0.913,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "5938f4d5edbce5c2fe633b8eb2bd69f6f204f96008112f5b9897e0cf05a708c1",
+      "original_index": 4812,
+      "prediction": "[getPlaygroundAvailability(location=\"community center\", time=\"afternoon\")]",
+      "reference": "[getPlaygroundAvailability(location=\"community center\", time=\"afternoon\")]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": true
+      },
+      "input_tokens": 433,
+      "generated_tokens": 16,
+      "generation_seconds": 0.987,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "4ff8c203483e0919ff613cd3a345ad5ed9fbdbca579362f06d8616801aa70fc4",
+      "original_index": 2256,
+      "prediction": "[Get Supported Countries()]",
+      "reference": "[Get Supported Countries()]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": true
+      },
+      "input_tokens": 789,
+      "generated_tokens": 6,
+      "generation_seconds": 0.542,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "49386ea969448cfabe4cf53ac5efbde1845b83700d4563761f38fd3d7373ad03",
+      "original_index": 1570,
+      "prediction": "[Pitstopdataforarace(year=2026, round=1)]",
+      "reference": "[Pitstopdataforarace(year=2026, round=1)]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": true
+      },
+      "input_tokens": 382,
+      "generated_tokens": 19,
+      "generation_seconds": 1.168,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "2f32b2d3c67a5c9d573eaf78fa9b3ff68906c7c4af4e6e8877a8aca941490eab",
+      "original_index": 7398,
+      "prediction": "[deleteMBaaS(instance_id=\"MBaaS123\")]",
+      "reference": "[deleteMBaaS(instance_id=\"MBaaS123\")]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": true
+      },
+      "input_tokens": 197,
+      "generated_tokens": 14,
+      "generation_seconds": 0.828,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "dff2b9110c2d2b29bf9c48e2dbdb1732036e287ba3c29a079b8cf1e5fffca34d",
+      "original_index": 7704,
+      "prediction": "[Airbnb Listings(checkout=\"2023-12-27\")]",
+      "reference": "[Airbnb Listings(location=\"San Francisco\", checkin=\"2025-12-20\", checkout=\"2025-12-27\")]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": false
+      },
+      "input_tokens": 894,
+      "generated_tokens": 19,
+      "generation_seconds": 1.339,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "1f3bf700a8046b1e3baa432cc9aabb83f1d96154d2dd87f9be5bf0981226338e",
+      "original_index": 8680,
+      "prediction": "[Historical Engagement Stats(jsonp=\"get_engagement_stats\", start=\"1629478400\", end=\"1630254800\", properties=\"max,min\")]",
+      "reference": "[Historical Engagement Stats(jsonp=\"function1\", start=\"2026-01-03\", end=\"2026-02-02\", properties=\"max,min\", human=True)]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": false
+      },
+      "input_tokens": 861,
+      "generated_tokens": 44,
+      "generation_seconds": 2.751,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "cff4df60468e89e60f13a761438f1e9dcc233c94a01ba7501c85e220bb8f8375",
+      "original_index": 3589,
+      "prediction": "[Company Search by CNAE or Location(page=\"1\")]",
+      "reference": "[Company Search by CNAE or Location(page=\"1\", localizacao=\"California\", cnae=\"011200\")]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": false
+      },
+      "input_tokens": 1092,
+      "generated_tokens": 14,
+      "generation_seconds": 1.105,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "adab1c4aa00d073eef6290876ee2ee4b724a9e6808b4ba7777a2ce367112da2c",
+      "original_index": 3210,
+      "prediction": "[getMarketResearchData(product=\"anti-aging creams\", industry=\"skincare\", location=\"United States\")]",
+      "reference": "[getMarketResearchData(product=\"anti-aging creams\", industry=\"skincare\", location=\"United States\")]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": true
+      },
+      "input_tokens": 518,
+      "generated_tokens": 23,
+      "generation_seconds": 1.401,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "1aeaa1e78615611929dfc51b975abe6247083eb2b562e05dcb3813dd508b1e79",
+      "original_index": 8462,
+      "prediction": "[Get House Prices and Values(search_area=\"Manhattan\")]",
+      "reference": "[Get House Prices and Values(search_area=\"Manhattan\")]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": true
+      },
+      "input_tokens": 1032,
+      "generated_tokens": 13,
+      "generation_seconds": 1.019,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "be5da637794b5a2c0ee81ad913c683ff2a0c841ea27b9187fbc8f7e4f55e7081",
+      "original_index": 1749,
+      "prediction": "[resonance.impedanceCalculator(circuitDetails=[{\"componentType\": \"Resistor\", \"value\": 10.0}, {\"componentType\": \"Capacitor\", \"value\": 0.01}], frequencyRange=[\"2024-09-24\", \"2024-09-30\"])]",
+      "reference": "[resonance.impedanceCalculator(circuitDetails=[{\"componentType\": \"Resistor\", \"value\": 10.0}, {\"componentType\": \"Capacitor\", \"value\": 0.01}], frequencyRange=[\"2024-09-24\", \"2024-09-25\", \"2024-09-26\", \"2024-09-27\", \"2024-09-28\", \"2024-09-29\", \"2024-09-30\"])]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": false
+      },
+      "input_tokens": 380,
+      "generated_tokens": 74,
+      "generation_seconds": 4.395,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "856e7288fb50dfe07149cf00162d4352bbd0bede5ae6e628fa443f07319f027b",
+      "original_index": 7179,
+      "prediction": "[Get Current Version()]",
+      "reference": "[Get Current Version()]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": true
+      },
+      "input_tokens": 501,
+      "generated_tokens": 6,
+      "generation_seconds": 0.408,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "0a3e3ab1674bf1ec7ac8056cd50c94026a80366009bc89816967d6bdf04f4f98",
+      "original_index": 7624,
+      "prediction": "[sendRobotCommand(robot_id=\"RX-005\", command=\"move_forward\")]",
+      "reference": "[sendRobotCommand(robot_id=\"RX-005\", command=\"move_forward\")]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": true
+      },
+      "input_tokens": 569,
+      "generated_tokens": 19,
+      "generation_seconds": 1.247,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "09e56452d847042a90194d8c334b5bcfbcd4ec7405f1d6f43cf921c9b20d14f1",
+      "original_index": 11296,
+      "prediction": "[search_holidays(country=\"Japan\", year=2022)]",
+      "reference": "[search_holidays(country=\"Japan\", year=2022)]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": true
+      },
+      "input_tokens": 217,
+      "generated_tokens": 16,
+      "generation_seconds": 0.949,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "1d3f91f2ed6704516cb645a3c55c620566728fe7455bb1a020f0cb2b8047227c",
+      "original_index": 3142,
+      "prediction": "[Get Team Championships by Count(sport=\"football\")]",
+      "reference": "[Get Team Championships by Count(sport=\"football\")]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": true
+      },
+      "input_tokens": 1125,
+      "generated_tokens": 12,
+      "generation_seconds": 0.992,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "47b4876283f1e5c800c4f8b81bc320518bd8aa7ec13a79ee393207f6394eb484",
+      "original_index": 5908,
+      "prediction": "[Retrieve Country IATA Codes for Airports(airport_code=\"LAX\")]",
+      "reference": "[Retrieve Country IATA Codes for Airports(airport_code=\"LAX\")]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": true
+      },
+      "input_tokens": 510,
+      "generated_tokens": 17,
+      "generation_seconds": 1.03,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "4d5b375e5caf852686868ae8acfc321fd41d080c34ba6cfa82924e65b2d553ea",
+      "original_index": 5854,
+      "prediction": "[check_email_domain(email=\"john.doe@examplecompany.com\")]",
+      "reference": "[check_email_domain(email=\"john.doe@examplecompany.com\")]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": true
+      },
+      "input_tokens": 190,
+      "generated_tokens": 14,
+      "generation_seconds": 0.806,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "a04ad39c0975eb573941264fc15724772cbb9365e53a58f3eea21d7fd074ca19",
+      "original_index": 2466,
+      "prediction": "[calculate_discount_amount(price=120.0, discount_percentage=25.0)]",
+      "reference": "[calculate_discount_amount(price=120.0, discount_percentage=25.0)]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": true
+      },
+      "input_tokens": 219,
+      "generated_tokens": 21,
+      "generation_seconds": 1.232,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "c0089c5b6adaa52fc0fa85efac31df4df316c30edb9486b7e248fd49d91ecfd5",
+      "original_index": 9170,
+      "prediction": "[getMolecularFormula(compound_name=\"Ethanol\")]",
+      "reference": "[getMolecularFormula(compound_name=\"Ethanol\")]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": true
+      },
+      "input_tokens": 445,
+      "generated_tokens": 13,
+      "generation_seconds": 0.779,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "09aebd89c7faf120287d6529fddcc57b717ce14bed67c75115a9b31b4927da7f",
+      "original_index": 11009,
+      "prediction": "[gitBranchComparer(repoUrl=\"https://github.com/user/project\", branch1=\"feature\", branch2=\"development\")]",
+      "reference": "[gitBranchComparer(repoUrl=\"https://github.com/user/project\", branch1=\"feature\", branch2=\"development\")]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": true
+      },
+      "input_tokens": 553,
+      "generated_tokens": 25,
+      "generation_seconds": 1.528,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "b1be685331eb9e2e44a24ec0945a4aba72d0629557a878118751e916397c9f9e",
+      "original_index": 10191,
+      "prediction": "[getPublicTransportSchedule(location=\"Tokyo\")]",
+      "reference": "[getPublicTransportSchedule(location=\"Tokyo\")]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": true
+      },
+      "input_tokens": 192,
+      "generated_tokens": 11,
+      "generation_seconds": 0.717,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "41fb12a43f77b9d639bce6f8cca487970f561bdc0011b734ed21b1cb5ea09428",
+      "original_index": 2734,
+      "prediction": "[communication_flow_analysis.evaluate_communication_efficiency(communicationMethods=[{\"method\": \"Email\", \"usageStats\": {\"usageFrequency\": 40, \"averageDuration\": 5}}, {\"method\": \"Instant Messaging\", \"usageStats\": {\"usageFrequency\": 100, \"averageDuration\": 2}}, {\"method\": \"Face-to-Face\", \"usageStats\": {\"usageFrequency\": 3, \"averageDuration\": 30}}])]",
+      "reference": "[communication_flow_analysis.evaluate_communication_efficiency(communicationMethods=[{\"method\": \"Email\", \"usageStats\": {\"usageFrequency\": 40, \"averageDuration\": 5}}, {\"method\": \"Instant Messaging\", \"usageStats\": {\"usageFrequency\": 100, \"averageDuration\": 2}}, {\"method\": \"Face-to-Face\", \"usageStats\": {\"usageFrequency\": 3, \"averageDuration\": 30}}])]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": true
+      },
+      "input_tokens": 420,
+      "generated_tokens": 95,
+      "generation_seconds": 5.461,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "d7df1f6efab5564d8fb1d9aa0baf19f2cb98d1cea3b008c2efc18289765091ce",
+      "original_index": 2176,
+      "prediction": "[StreamAnalyzer.processEvent(event=\"{'userID': '12345', 'eventType': 'login', 'timestamp': '2023-10-05T14:12:33.001Z'}\", eventHandler=\"latestHandler\")]",
+      "reference": "[StreamAnalyzer.processEvent(event=\"{\\\"userID\\\": \\\"12345\\\", \\\"eventType\\\": \\\"login\\\", \\\"timestamp\\\": \\\"2023-10-05T14:12:33.001Z\\\"}\", eventHandler=\"latestHandler\", processingOptions=[])]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": false
+      },
+      "input_tokens": 384,
+      "generated_tokens": 60,
+      "generation_seconds": 3.498,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "cbac90548db1556b41c6e343e9e22dbfaa64c8bbb125291a506da00bc95b3366",
+      "original_index": 5664,
+      "prediction": "[getMalayalamWord(word=\"kutti\")]",
+      "reference": "[getMalayalamWord(word=\"kutti\")]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": true
+      },
+      "input_tokens": 201,
+      "generated_tokens": 13,
+      "generation_seconds": 0.751,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "d5084cf6a45912541d4003e5814fd83ef8c383774490a31855a25cacacca5ae6",
+      "original_index": 8726,
+      "prediction": "[Fixtures By Date(string=\"2026-04-20\")]",
+      "reference": "[Fixtures By Date(string=\"2026-04-20\")]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": true
+      },
+      "input_tokens": 710,
+      "generated_tokens": 19,
+      "generation_seconds": 1.249,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "852b75158e0de8b5c51685465db4369b77ff6063ea2bccbc56a25f75704148e0",
+      "original_index": 7847,
+      "prediction": "[Get Transaction Details(hash=\"0x123abcd456efg7890hijklmn123pqrst456uvwxyz\", symbol=\"ETH\")]",
+      "reference": "[Get Transaction Details(hash=\"0x123abcd456efg7890hijklmn123pqrst456uvwxyz\", symbol=\"ETH\")]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": true
+      },
+      "input_tokens": 609,
+      "generated_tokens": 39,
+      "generation_seconds": 2.343,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "47c1f92bd1709f7b2550c0c2c552235822ea344b6bc99ae5016e3c09ea10b3da",
+      "original_index": 7696,
+      "prediction": "[Get MLB Player List()]",
+      "reference": "[Get MLB Player List()]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": true
+      },
+      "input_tokens": 345,
+      "generated_tokens": 7,
+      "generation_seconds": 0.414,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "896170202db09b5aa3c2eb5a64b818de93f49f17d26db9df92f240200ede83a3",
+      "original_index": 5660,
+      "prediction": "[ShowerThoughts API(num=5)]",
+      "reference": "[ShowerThoughts API(num=5)]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": true
+      },
+      "input_tokens": 639,
+      "generated_tokens": 11,
+      "generation_seconds": 0.758,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "be5393005dcf029fb7c1660836202998be80b68f324d9ea43c0d79d92cf6fdb6",
+      "original_index": 6489,
+      "prediction": "The query provides sufficient information to call the function `DataGovernance.policyEnforcement`, but there's an issue with the structure of the parameters:\n\n- **Policy IDs**: All three policies have unique identifiers.\n- **Departments**: The departments specified (HR, Finance, IT, Sales) are correct.\n- **Data Stores**: The data stores specified (SQL Database, File Storage, NoSQL Database) are also correct.\n\nHowever, the query lacks the following:\n- A list of policies (`policies`).\n\nTo proceed, you need to provide the list of policies that include their respective department and data store details. Please provide the full list of policies along with their specific requirements.",
+      "reference": "[DataGovernance.policyEnforcement(policies=[{\"policyId\": \"POL1001\", \"departments\": [\"HR\", \"Finance\"], \"dataStores\": [\"SQL Database\", \"File Storage\"]}, {\"policyId\": \"POL1002\", \"departments\": [\"IT\"], \"dataStores\": [\"NoSQL Database\", \"File Storage\"]}, {\"policyId\": \"POL1003\", \"departments\": [\"Sales\"], \"dataStores\": [\"SQL Database\", \"NoSQL Database\", \"File Storage\"]}])]",
+      "metrics": {
+        "parseable_call": false,
+        "tool_correct": false,
+        "call_exact": false
+      },
+      "input_tokens": 413,
+      "generated_tokens": 138,
+      "generation_seconds": 8.173,
+      "reached_token_limit": false
+    }
+  ]
+}
