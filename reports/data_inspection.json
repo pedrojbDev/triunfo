@@ -253,6 +253,7 @@
       2
     ],
     "overlap_checks": "Nenhuma sobreposição nas chaves verificadas, conforme saída do Colab. Não é auditoria semântica completa.",
-    "backup_status": "Aguardando preservação dos arquivos temporários do Colab."
+    "backup_status": "ZIP de 2,63 MB criado no Colab após checagem dos três hashes; usuário confirmou o download concluído no computador.",
+    "reproduction_check": "reproduction_check.json"
   }
 }

@@ -8,7 +8,7 @@ O projeto investiga três comportamentos: escolher a ferramenta correta, preench
 
 Preparação dos dados executada no Colab, a partir dos 11.300 exemplos da revisão `6bda777c88d21e5a204703c1ee45597a8fa4f734` do ToolACE. O recorte tem 5.586 exemplos: 4.469 de treino, 559 de validação e 558 de teste, com semente 42. Ainda não há modelo ajustado ou resultados de avaliação de modelos.
 
-O [notebook de preparação](notebooks/01_data_inspection.ipynb) fixa a revisão e reúne a lógica das células utilizadas. O [registro da inspeção](reports/data_inspection.json) documenta as checagens e limitações. O [manifesto do recorte](reports/dataset_manifest.json) registra a divisão e os hashes dos arquivos observados no Colab. A execução integral da versão consolidada do notebook ainda precisa ser repetida e comparada a esses hashes.
+O [notebook de preparação](notebooks/01_data_inspection.ipynb) fixa a revisão e reúne a lógica das células utilizadas. O [registro da inspeção](reports/data_inspection.json) documenta as checagens e limitações. O [manifesto do recorte](reports/dataset_manifest.json) registra a divisão e os hashes dos arquivos observados no Colab. As oito células de código foram reexecutadas e os três arquivos coincidiram com os hashes observados no Colab. O [registro de reprodução](reports/reproduction_check.json) documenta essa conferência.
 
 ## Recorte preparado
 

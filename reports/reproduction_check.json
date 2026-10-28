@@ -1,0 +1,39 @@
+{
+  "scope": "Reexecução apenas da preparação dos dados; nenhum modelo carregado ou executado.",
+  "python_version": "3.12.3",
+  "dataset_revision": "6bda777c88d21e5a204703c1ee45597a8fa4f734",
+  "seed": 42,
+  "code_cells_passed": 8,
+  "files_match_reference": {
+    "train": true,
+    "validation": true,
+    "test": true
+  },
+  "observed_files": {
+    "train": {
+      "exemplos": 4469,
+      "formatos": {
+        "chamada_unica": 3423,
+        "fora_dos_colchetes": 1046
+      },
+      "sha256": "0a139d3a1b4eb5f0d2c7f854f6e5940570769e19e053f6950290e4ee2314c003"
+    },
+    "validation": {
+      "exemplos": 559,
+      "formatos": {
+        "fora_dos_colchetes": 129,
+        "chamada_unica": 430
+      },
+      "sha256": "cef828a8d7ca10e0988cc16d056c571e10f13caf6c87458074bae10c2766b954"
+    },
+    "test": {
+      "exemplos": 558,
+      "formatos": {
+        "chamada_unica": 444,
+        "fora_dos_colchetes": 114
+      },
+      "sha256": "bf4fb9eb1316dfc621eb1b1c1085fbb44d1750b017e5eb65104240bf420f356f"
+    }
+  },
+  "limitations": "Esta verificação não avalia modelos nem comprova ausência de sobreposição semântica ou exposição no pré-treinamento."
+}
