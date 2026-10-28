@@ -11,5 +11,59 @@
     "use_safetensors": true
   },
   "system_instruction": "You are a tool-use assistant. Use only the available tools. When calling a tool, return exactly one call inside square brackets: [tool_name(argument=value)]. Copy the tool name exactly, including spaces or dots. Use Python literal syntax for argument values. If no available tool can fulfill the request, explain why. If required information is missing, ask for it. Do not invent missing information or tool results.",
-  "status": "Carregamento confirmado no Colab em float16/SDPA, com pesos congelados para baseline; ainda sem geração ou métricas de avaliação. Memória de treino ainda não testada."
+  "status": "Carregamento confirmado no Colab em float16/SDPA, com pesos congelados para baseline; ainda sem geração ou métricas de avaliação. Memória de treino ainda não testada.",
+  "preliminary_validation": {
+    "sample_size": 32,
+    "selection_seed": 42,
+    "eligible_format": "chamada_unica",
+    "available_examples": 430,
+    "example_ids": [
+      "ca3f7c15355f26ed35927d4e10848577646fdc2a3790eb9cba420303f37b7a68",
+      "22688cd4b1952c1c89b35662af6919576eaf05c8690c47d1f2f0c85b2bce80fb",
+      "09651707292f0c5cec4a5e6da39735a98b9d17d9324e7f4716ef1a4b09ad714c",
+      "e166c1e7a2a05a80ce31d5852bc691702604545b93cb8d852f942ad2c0c18722",
+      "5938f4d5edbce5c2fe633b8eb2bd69f6f204f96008112f5b9897e0cf05a708c1",
+      "4ff8c203483e0919ff613cd3a345ad5ed9fbdbca579362f06d8616801aa70fc4",
+      "49386ea969448cfabe4cf53ac5efbde1845b83700d4563761f38fd3d7373ad03",
+      "2f32b2d3c67a5c9d573eaf78fa9b3ff68906c7c4af4e6e8877a8aca941490eab",
+      "dff2b9110c2d2b29bf9c48e2dbdb1732036e287ba3c29a079b8cf1e5fffca34d",
+      "1f3bf700a8046b1e3baa432cc9aabb83f1d96154d2dd87f9be5bf0981226338e",
+      "cff4df60468e89e60f13a761438f1e9dcc233c94a01ba7501c85e220bb8f8375",
+      "adab1c4aa00d073eef6290876ee2ee4b724a9e6808b4ba7777a2ce367112da2c",
+      "1aeaa1e78615611929dfc51b975abe6247083eb2b562e05dcb3813dd508b1e79",
+      "be5da637794b5a2c0ee81ad913c683ff2a0c841ea27b9187fbc8f7e4f55e7081",
+      "856e7288fb50dfe07149cf00162d4352bbd0bede5ae6e628fa443f07319f027b",
+      "0a3e3ab1674bf1ec7ac8056cd50c94026a80366009bc89816967d6bdf04f4f98",
+      "09e56452d847042a90194d8c334b5bcfbcd4ec7405f1d6f43cf921c9b20d14f1",
+      "1d3f91f2ed6704516cb645a3c55c620566728fe7455bb1a020f0cb2b8047227c",
+      "47b4876283f1e5c800c4f8b81bc320518bd8aa7ec13a79ee393207f6394eb484",
+      "4d5b375e5caf852686868ae8acfc321fd41d080c34ba6cfa82924e65b2d553ea",
+      "a04ad39c0975eb573941264fc15724772cbb9365e53a58f3eea21d7fd074ca19",
+      "c0089c5b6adaa52fc0fa85efac31df4df316c30edb9486b7e248fd49d91ecfd5",
+      "09aebd89c7faf120287d6529fddcc57b717ce14bed67c75115a9b31b4927da7f",
+      "b1be685331eb9e2e44a24ec0945a4aba72d0629557a878118751e916397c9f9e",
+      "41fb12a43f77b9d639bce6f8cca487970f561bdc0011b734ed21b1cb5ea09428",
+      "d7df1f6efab5564d8fb1d9aa0baf19f2cb98d1cea3b008c2efc18289765091ce",
+      "cbac90548db1556b41c6e343e9e22dbfaa64c8bbb125291a506da00bc95b3366",
+      "d5084cf6a45912541d4003e5814fd83ef8c383774490a31855a25cacacca5ae6",
+      "852b75158e0de8b5c51685465db4369b77ff6063ea2bccbc56a25f75704148e0",
+      "47c1f92bd1709f7b2550c0c2c552235822ea344b6bc99ae5016e3c09ea10b3da",
+      "896170202db09b5aa3c2eb5a64b818de93f49f17d26db9df92f240200ede83a3",
+      "be5393005dcf029fb7c1660836202998be80b68f324d9ea43c0d79d92cf6fdb6"
+    ],
+    "generation": {
+      "do_sample": false,
+      "num_beams": 1,
+      "max_new_tokens": 768,
+      "temperature": 1.0,
+      "top_p": 1.0,
+      "top_k": 50
+    },
+    "metrics": [
+      "parseable_call",
+      "tool_correct",
+      "call_exact"
+    ],
+    "interpretation": "Amostra preliminar de alinhamento à referência; não é avaliação geral de recusas ou correção semântica."
+  }
 }

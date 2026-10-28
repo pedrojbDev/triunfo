@@ -11,5 +11,14 @@
     "latitude",
     "longitude"
   ],
-  "interpretation": "Um exemplo não estima desempenho geral. Correspondência exata mede fidelidade à referência e não comprova correção no mundo real. Não remover o caso para melhorar métricas."
+  "interpretation": "Um exemplo não estima desempenho geral. Correspondência exata mede fidelidade à referência e não comprova correção no mundo real. Não remover o caso para melhorar métricas.",
+  "colab_evaluator_result": {
+    "parseable_call": false,
+    "tool_correct": false,
+    "call_exact": false
+  },
+  "validation_reference_preflight": {
+    "examined_call_references": 430,
+    "unsupported_references": 0
+  }
 }
