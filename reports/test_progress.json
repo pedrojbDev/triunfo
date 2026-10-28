@@ -1,0 +1,15 @@
+{
+  "status": "interrupted_gpu_quota",
+  "complete": false,
+  "base_completed": 558,
+  "finetuned_completed": 147,
+  "finetuned_remaining": 411,
+  "freeze_sha256": "093280a099dd8b60ce7346c7ff2b11c783e20860f568a4a7997d81762d88dd8f",
+  "final_metrics_computed": false,
+  "progress_verified_in_drive": true,
+  "files": {
+    "finetuned_test558.json": "7c7346af3b7780859afee9479caf677aa98279e6eb58f53c67c4547dace2a3fd",
+    "test_protocol_freeze.json": "093280a099dd8b60ce7346c7ff2b11c783e20860f568a4a7997d81762d88dd8f",
+    "base_test558.json": "8576ba15ecaa363b09d09106aa7a77dbc7d7e8754e3db65c36547a85fecdaded"
+  }
+}
