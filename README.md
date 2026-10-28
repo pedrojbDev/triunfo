@@ -6,9 +6,17 @@ O projeto investiga três comportamentos: escolher a ferramenta correta, preench
 
 ## Estado atual
 
-Inspeção inicial executada no Colab: 11.300 exemplos, com campos `system` e `conversations`, na revisão `6bda777c88d21e5a204703c1ee45597a8fa4f734` do ToolACE. Ainda não há modelo ajustado ou resultados de avaliação.
+Preparação dos dados executada no Colab, a partir dos 11.300 exemplos da revisão `6bda777c88d21e5a204703c1ee45597a8fa4f734` do ToolACE. O recorte tem 5.586 exemplos: 4.469 de treino, 559 de validação e 558 de teste, com semente 42. Ainda não há modelo ajustado ou resultados de avaliação de modelos.
 
-O [notebook de inspeção](notebooks/01_data_inspection.ipynb) fixa essa revisão para reprodução. O [registro da inspeção](reports/data_inspection.json) documenta o resultado observado. A auditoria completa e a separação dos conjuntos são as próximas etapas.
+O [notebook de preparação](notebooks/01_data_inspection.ipynb) fixa a revisão e reúne a lógica das células utilizadas. O [registro da inspeção](reports/data_inspection.json) documenta as checagens e limitações. O [manifesto do recorte](reports/dataset_manifest.json) registra a divisão e os hashes dos arquivos observados no Colab. A execução integral da versão consolidada do notebook ainda precisa ser repetida e comparada a esses hashes.
+
+## Recorte preparado
+
+São 4.297 exemplos de chamadas únicas reconhecidas pelo leitor e 1.289 respostas fora dos colchetes. Esta segunda categoria descreve o formato; não significa que todos esses exemplos sejam recusas. A inspeção de uma amostra encontrou tanto ferramentas incompatíveis quanto pedidos de dados faltantes.
+
+Três entradas duplicadas com a mesma resposta foram unificadas, preservando os índices de origem. Registros com pedidos normalizados iguais ou conjuntos idênticos de descrições de ferramentas foram mantidos na mesma divisão. As checagens dessas chaves passaram no Colab. Ferramentas individuais podem aparecer em diferentes divisões; não se trata de um teste de APIs inéditas nem de uma auditoria completa de semelhança semântica.
+
+A leitura das chamadas e a presença dos argumentos obrigatórios foram verificadas no nível superior. Tipos, objetos aninhados, semântica e execução das ferramentas não foram validados por essas checagens. O tamanho em tokens será medido na configuração do modelo, antes de definir o limite de contexto.
 
 ## Experimento
 
@@ -18,7 +26,7 @@ O [notebook de inspeção](notebooks/01_data_inspection.ipynb) fixa essa revisã
 - Comparação: modelo original e modelo ajustado, usando os mesmos exemplos de avaliação.
 - Métricas previstas: acerto da ferramenta, acerto dos argumentos, validade do formato e chamadas indevidas.
 
-A revisão dos dados, as divisões de treino/validação/teste e a configuração final serão registradas após a inspeção. As conversas e os esquemas semelhantes de ferramentas precisam ser considerados nessa separação.
+A configuração final do treinamento e da avaliação será registrada após medir os tokens e executar o piloto. Os conjuntos de validação e teste preparados devem permanecer reservados durante essas decisões.
 
 ## Organização
 

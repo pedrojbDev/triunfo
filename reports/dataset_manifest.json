@@ -1,0 +1,42 @@
+{
+  "dataset": "Team-ACE/ToolACE",
+  "dataset_revision": "6bda777c88d21e5a204703c1ee45597a8fa4f734",
+  "seed": 42,
+  "total_examples": 5586,
+  "group_count": 5408,
+  "split_policy": "Grupos conectados por pedido normalizado igual ou conjunto idêntico de descrições de ferramentas; proporção aproximada 80/10/10.",
+  "limitations": [
+    "Ferramentas individuais podem aparecer em divisões diferentes.",
+    "A checagem não identifica todas as paráfrases ou semelhanças semânticas.",
+    "Tamanho em tokens e compatibilidade com o treinamento ainda serão medidos.",
+    "O formato fora_dos_colchetes não é um rótulo semântico de recusa."
+  ],
+  "source": "https://huggingface.co/datasets/Team-ACE/ToolACE",
+  "declared_data_license": "Apache-2.0",
+  "files": {
+    "train": {
+      "exemplos": 4469,
+      "formatos": {
+        "chamada_unica": 3423,
+        "fora_dos_colchetes": 1046
+      },
+      "sha256": "0a139d3a1b4eb5f0d2c7f854f6e5940570769e19e053f6950290e4ee2314c003"
+    },
+    "validation": {
+      "exemplos": 559,
+      "formatos": {
+        "fora_dos_colchetes": 129,
+        "chamada_unica": 430
+      },
+      "sha256": "cef828a8d7ca10e0988cc16d056c571e10f13caf6c87458074bae10c2766b954"
+    },
+    "test": {
+      "exemplos": 558,
+      "formatos": {
+        "chamada_unica": 444,
+        "fora_dos_colchetes": 114
+      },
+      "sha256": "bf4fb9eb1316dfc621eb1b1c1085fbb44d1750b017e5eb65104240bf420f356f"
+    }
+  }
+}

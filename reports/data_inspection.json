@@ -194,5 +194,65 @@
       }
     ],
     "limitations": "Qualitative inspection of four examples only. Does not label all 1289 responses or prove their correctness. Keep free-text targets as candidates; do not invent structured intent labels."
+  },
+  "single_call_reader": {
+    "bracketed_examined": 8445,
+    "recognized_single_calls": 4300,
+    "not_interpreted": 4145,
+    "recognized_example": {
+      "original_index": 1300,
+      "tool": "urbanPlanningSimulator.simulate",
+      "argument_names": [
+        "cityModel",
+        "scenarios"
+      ],
+      "observation": "Uma chamada pode conter argumentos longos e aninhados."
+    },
+    "inspected_multiple_call_indices": [
+      1301,
+      1306,
+      1308
+    ],
+    "limitations": "Os casos não interpretados incluem múltiplas chamadas e podem incluir outras sintaxes não suportadas. O leitor usa argumentos literais Python; nomes JSON como true, false e null não são reconhecidos por ast.literal_eval. Ainda não verifica parâmetros ou semântica."
+  },
+  "top_level_argument_audit": {
+    "examined": 4300,
+    "compatible_with_checks": 4300,
+    "observed_divergences": 0,
+    "checks": [
+      "single matching tool definition",
+      "required argument names present",
+      "provided argument names declared in properties"
+    ],
+    "limitations": "Não verifica tipos, objetos aninhados, valores, semântica do pedido ou execução."
+  },
+  "deduplication_and_size": {
+    "candidates": 5589,
+    "same_target_duplicates_unified": 3,
+    "conflicting_input_groups": 0,
+    "prepared": 5586,
+    "formats": {
+      "chamada_unica": 4297,
+      "fora_dos_colchetes": 1289
+    },
+    "characters_input_plus_response": {
+      "minimum": 252,
+      "median": 1590.0,
+      "maximum": 8549
+    },
+    "limitations": "Duplicação exata por entrada canônica; não é auditoria semântica ou de paráfrases. Caracteres não são tokens. As 1.289 respostas de outro formato não foram todas rotuladas por intenção."
+  },
+  "prepared_split": {
+    "manifest": "dataset_manifest.json",
+    "group_count": 5408,
+    "largest_group_sizes": [
+      3,
+      2,
+      2,
+      2,
+      2
+    ],
+    "overlap_checks": "Nenhuma sobreposição nas chaves verificadas, conforme saída do Colab. Não é auditoria semântica completa.",
+    "backup_status": "Aguardando preservação dos arquivos temporários do Colab."
   }
 }
