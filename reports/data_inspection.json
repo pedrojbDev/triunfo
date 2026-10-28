@@ -167,5 +167,32 @@
       ]
     },
     "interpretation": "Candidatos ainda não aprovados para treinamento: resta verificar formatos e semântica das respostas, duplicatas e grupos para divisão. Colchetes não garantem uma chamada única nem correta. Respostas em texto podem conter recusas ou pedidos de esclarecimento."
+  },
+  "non_bracketed_sample_review": {
+    "sampling": {
+      "seed": 42,
+      "size": 4,
+      "population": 1289,
+      "population_order": "candidatos_json in original dataset order"
+    },
+    "observations": [
+      {
+        "original_index": 3196,
+        "observed_behavior": "No compatible tool for NBA schedule; available tools concern other sports. Generic extra sentence about missing parameters deserves caution."
+      },
+      {
+        "original_index": 1774,
+        "observed_behavior": "No compatible tool for generating QR codes; postal code lookup does not satisfy request."
+      },
+      {
+        "original_index": 5764,
+        "observed_behavior": "Reference response requests missing code and error message for debugging and logging."
+      },
+      {
+        "original_index": 5298,
+        "observed_behavior": "Reference response requests missing text and keyword patterns."
+      }
+    ],
+    "limitations": "Qualitative inspection of four examples only. Does not label all 1289 responses or prove their correctness. Keep free-text targets as candidates; do not invent structured intent labels."
   }
 }
