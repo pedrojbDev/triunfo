@@ -1,0 +1,94 @@
+{
+  "source": "Valores exibidos pelo Trainer no Colab e compartilhados pelo usuário.",
+  "interpretation": "Loss de treino por janela de logging; não é métrica de validação.",
+  "logs": [
+    {
+      "step": 25,
+      "training_loss": 0.64966
+    },
+    {
+      "step": 50,
+      "training_loss": 0.48657
+    },
+    {
+      "step": 75,
+      "training_loss": 0.375942
+    },
+    {
+      "step": 100,
+      "training_loss": 0.362625
+    },
+    {
+      "step": 125,
+      "training_loss": 0.405019
+    },
+    {
+      "step": 150,
+      "training_loss": 0.436973
+    },
+    {
+      "step": 175,
+      "training_loss": 0.387177
+    },
+    {
+      "step": 200,
+      "training_loss": 0.372701
+    },
+    {
+      "step": 225,
+      "training_loss": 0.372157
+    },
+    {
+      "step": 250,
+      "training_loss": 0.344432
+    },
+    {
+      "step": 275,
+      "training_loss": 0.28243
+    },
+    {
+      "step": 300,
+      "training_loss": 0.398916
+    },
+    {
+      "step": 325,
+      "training_loss": 0.329192
+    },
+    {
+      "step": 350,
+      "training_loss": 0.36432
+    },
+    {
+      "step": 375,
+      "training_loss": 0.229705
+    },
+    {
+      "step": 400,
+      "training_loss": 0.310054
+    },
+    {
+      "step": 425,
+      "training_loss": 0.31
+    },
+    {
+      "step": 450,
+      "training_loss": 0.333882
+    },
+    {
+      "step": 475,
+      "training_loss": 0.406311
+    },
+    {
+      "step": 500,
+      "training_loss": 0.332594
+    },
+    {
+      "step": 525,
+      "training_loss": 0.388126
+    },
+    {
+      "step": 550,
+      "training_loss": 0.378781
+    }
+  ]
+}
