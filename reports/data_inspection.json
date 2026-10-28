@@ -12,5 +12,127 @@
     "user": "I'm considering investing and I'd like to know what's happening in the market right now. Could you get me the top market trends in the US?",
     "assistant": "[Market Trends API(trend_type=\"MARKET_INDEXES\", country=\"us\")]"
   },
-  "scope": "Contagem, estrutura e um exemplo; sem auditoria completa, divisões de avaliação ou treinamento."
+  "scope": "Inspeção inicial e auditoria estrutural; esquemas, chamadas, duplicação e divisões de avaliação ainda não auditados. Sem treinamento.",
+  "structural_audit": {
+    "examined": 11300,
+    "valid_records": 11300,
+    "invalid_records": 0,
+    "message_roles": {
+      "assistant": 13819,
+      "user": 12452,
+      "tool": 1367
+    },
+    "top_sequences": [
+      {
+        "roles": [
+          "user",
+          "assistant"
+        ],
+        "records": 10500
+      },
+      {
+        "roles": [
+          "user",
+          "assistant",
+          "tool",
+          "assistant",
+          "tool",
+          "assistant"
+        ],
+        "records": 259
+      },
+      {
+        "roles": [
+          "user",
+          "assistant",
+          "tool",
+          "assistant",
+          "user",
+          "assistant",
+          "user",
+          "assistant"
+        ],
+        "records": 179
+      },
+      {
+        "roles": [
+          "user",
+          "assistant",
+          "tool",
+          "assistant",
+          "user",
+          "assistant",
+          "user",
+          "assistant",
+          "tool",
+          "assistant"
+        ],
+        "records": 125
+      },
+      {
+        "roles": [
+          "user",
+          "assistant",
+          "tool",
+          "assistant",
+          "user",
+          "assistant",
+          "user",
+          "assistant",
+          "tool",
+          "assistant",
+          "user",
+          "assistant"
+        ],
+        "records": 44
+      },
+      {
+        "roles": [
+          "user",
+          "assistant",
+          "tool",
+          "assistant",
+          "user",
+          "assistant",
+          "user",
+          "assistant",
+          "user",
+          "assistant"
+        ],
+        "records": 34
+      },
+      {
+        "roles": [
+          "user",
+          "assistant",
+          "tool",
+          "assistant",
+          "tool",
+          "assistant",
+          "tool",
+          "assistant"
+        ],
+        "records": 24
+      },
+      {
+        "roles": [
+          "user",
+          "assistant",
+          "user",
+          "assistant",
+          "tool",
+          "assistant",
+          "user",
+          "assistant"
+        ],
+        "records": 23
+      }
+    ],
+    "messages_per_conversation": {
+      "minimum": 2,
+      "median": 2.0,
+      "maximum": 12
+    },
+    "interpretation": "10.500 conversas user/assistant são candidatas ao primeiro recorte. Duas mensagens não garantem chamada única. Estrutura válida não comprova correção semântica."
+  }
 }
