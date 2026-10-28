@@ -12,7 +12,7 @@
     "user": "I'm considering investing and I'd like to know what's happening in the market right now. Could you get me the top market trends in the US?",
     "assistant": "[Market Trends API(trend_type=\"MARKET_INDEXES\", country=\"us\")]"
   },
-  "scope": "Inspeção inicial e auditoria estrutural; esquemas, chamadas, duplicação e divisões de avaliação ainda não auditados. Sem treinamento.",
+  "scope": "Inspeção inicial, auditoria estrutural e leitura ancorada das descrições de ferramentas. Chamadas, duplicação e divisões de avaliação pendentes. Sem treinamento.",
   "structural_audit": {
     "examined": 11300,
     "valid_records": 11300,
@@ -134,5 +134,38 @@
       "maximum": 12
     },
     "interpretation": "10.500 conversas user/assistant são candidatas ao primeiro recorte. Duas mensagens não garantem chamada única. Estrutura válida não comprova correção semântica."
+  },
+  "tool_description_audit": {
+    "initial_reader": {
+      "method": "First opening bracket followed by JSON decoding",
+      "readable": 9752,
+      "failures": 748,
+      "failure_reasons": {
+        "empty_or_not_list": 264,
+        "double_quotes_expected": 152,
+        "no_list_found": 135,
+        "value_expected": 126,
+        "invalid_name": 61,
+        "comma_expected": 10
+      }
+    },
+    "diagnosis": "O primeiro colchete pode iniciar uma lista interna de parâmetros. Existem representações alternativas, incluindo HTML e outros formatos de chamada. Falha de leitura não demonstra corrupção do exemplo.",
+    "anchored_reader": {
+      "marker": "Here is a list of functions in JSON format that you can invoke:",
+      "examined_short_conversations": 10500,
+      "marker_absent": 518,
+      "readable_tool_descriptions": 9734,
+      "marker_present_but_read_failed": 248,
+      "bracketed_responses": 8445,
+      "other_response_format": 1289,
+      "first_failure_indices": [
+        1319,
+        1405,
+        1421,
+        1424,
+        1479
+      ]
+    },
+    "interpretation": "Candidatos ainda não aprovados para treinamento: resta verificar formatos e semântica das respostas, duplicatas e grupos para divisão. Colchetes não garantem uma chamada única nem correta. Respostas em texto podem conter recusas ou pedidos de esclarecimento."
   }
 }
