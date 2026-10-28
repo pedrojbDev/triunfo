@@ -1,4 +1,4 @@
-# Copiloto de APIs
+# Triunfo
 
 Fine-tuning de um LLM pequeno para gerar chamadas de ferramentas a partir de pedidos em linguagem natural.
 
@@ -25,7 +25,7 @@ Os arquivos serão acrescentados conforme cada etapa for executada:
 | Pasta | Conteúdo |
 | --- | --- |
 | `notebooks/` | Inspeção, treinamento e avaliação executados no Colab/Kaggle |
-| `src/copiloto_apis/` | Preparação dos dados, avaliação e integração das funções de demonstração |
+| `src/triunfo/` | Preparação dos dados, avaliação e integração das funções de demonstração |
 | `configs/` | Configurações dos experimentos |
 | `tests/` | Verificações de preparação dos dados e avaliação |
 | `reports/` | Métricas, gráficos e análise dos erros |
