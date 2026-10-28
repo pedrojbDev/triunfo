@@ -1,0 +1,18 @@
+{
+  "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "training_examples": 4469,
+  "global_step": 559,
+  "epoch": 1.0,
+  "metrics": {
+    "train_runtime": 2096.249,
+    "train_samples_per_second": 2.132,
+    "train_steps_per_second": 0.267,
+    "total_flos": 1.9126405725536256e+16,
+    "train_loss": 0.374045895762435,
+    "epoch": 1.0
+  },
+  "gpu_peak_allocated_gib": 6.02,
+  "adapter_path": "/content/drive/MyDrive/Triunfo/runs/lora_epoch1_recovery/adapter_final",
+  "backup_status": "ZIP conferido e salvo no Drive conforme saída do Colab; download no PC ainda não confirmado."
+}
