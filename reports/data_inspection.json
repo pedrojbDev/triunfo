@@ -1,0 +1,16 @@
+{
+  "dataset": "Team-ACE/ToolACE",
+  "revision": "6bda777c88d21e5a204703c1ee45597a8fa4f734",
+  "records": 11300,
+  "fields": [
+    "system",
+    "conversations"
+  ],
+  "execution_environment": "Google Colab",
+  "evidence": "Saída da inspeção executada no Colab e conferida antes da preparação do treinamento.",
+  "first_example": {
+    "user": "I'm considering investing and I'd like to know what's happening in the market right now. Could you get me the top market trends in the US?",
+    "assistant": "[Market Trends API(trend_type=\"MARKET_INDEXES\", country=\"us\")]"
+  },
+  "scope": "Contagem, estrutura e um exemplo; sem auditoria completa, divisões de avaliação ou treinamento."
+}

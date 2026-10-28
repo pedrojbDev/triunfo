@@ -6,7 +6,9 @@ O projeto investiga três comportamentos: escolher a ferramenta correta, preench
 
 ## Estado atual
 
-Preparação do projeto e inspeção inicial dos dados. Ainda não há modelo ajustado ou resultados experimentais.
+Inspeção inicial executada no Colab: 11.300 exemplos, com campos `system` e `conversations`, na revisão `6bda777c88d21e5a204703c1ee45597a8fa4f734` do ToolACE. Ainda não há modelo ajustado ou resultados de avaliação.
+
+O [notebook de inspeção](notebooks/01_data_inspection.ipynb) fixa essa revisão para reprodução. O [registro da inspeção](reports/data_inspection.json) documenta o resultado observado. A auditoria completa e a separação dos conjuntos são as próximas etapas.
 
 ## Experimento
 
