@@ -11,5 +11,5 @@
     "use_safetensors": true
   },
   "system_instruction": "You are a tool-use assistant. Use only the available tools. When calling a tool, return exactly one call inside square brackets: [tool_name(argument=value)]. Copy the tool name exactly, including spaces or dots. Use Python literal syntax for argument values. If no available tool can fulfill the request, explain why. If required information is missing, ask for it. Do not invent missing information or tool results.",
-  "status": "Configuração inicial; modelo ainda não carregado no Colab. Contexto de treino preserva todos os exemplos medidos, mas memória de treino ainda não foi testada."
+  "status": "Carregamento confirmado no Colab em float16/SDPA, com pesos congelados para baseline; ainda sem geração ou métricas de avaliação. Memória de treino ainda não testada."
 }
