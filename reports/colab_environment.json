@@ -17,5 +17,16 @@
     "torch_cuda_version": "13.0"
   },
   "source": "Saída da célula de inspeção executada no Colab.",
-  "status": "Ambiente observado; carregamento e compatibilidade do modelo ainda não testados."
+  "status": "Ambiente observado; carregamento e compatibilidade do modelo ainda não testados.",
+  "data_restore": {
+    "archive_name": "triunfo-dados-6bda777-seed42.zip",
+    "archive_bytes_reported": 2752820,
+    "train_hash_verified": true,
+    "validation_hash_verified": true,
+    "test_hash_verified": true,
+    "train_loaded": 4469,
+    "validation_loaded": 559,
+    "test_loaded_for_evaluation": false,
+    "source": "Saída da restauração no Colab anexada pelo usuário."
+  }
 }

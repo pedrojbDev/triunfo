@@ -1,0 +1,22 @@
+{
+  "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "training_examples_measured": 4469,
+  "full_conversation_tokens": {
+    "minimum": 159,
+    "p50": 504,
+    "p90": 844,
+    "p95": 951,
+    "maximum": 1711
+  },
+  "reference_response_tokens": {
+    "p95": 116,
+    "maximum": 693
+  },
+  "examples_above_context_size": {
+    "1024": 150,
+    "1536": 6,
+    "2048": 0
+  },
+  "system_instruction": "You are a tool-use assistant. Use only the available tools. When calling a tool, return exactly one call inside square brackets: [tool_name(argument=value)]. Copy the tool name exactly, including spaces or dots. Use Python literal syntax for argument values. If no available tool can fulfill the request, explain why. If required information is missing, ask for it. Do not invent missing information or tool results."
+}
