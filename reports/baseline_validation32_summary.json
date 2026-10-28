@@ -17,11 +17,12 @@
   },
   "reached_token_limit": 0,
   "median_generation_seconds": 1.04,
-  "provenance": "Resumo da execução no Colab compartilhado pelo usuário; previsões individuais ainda aguardam transferência.",
+  "provenance": "Previsões originais recebidas do Colab; 32 referências e métricas reconferidas com a validação preparada.",
   "limitations": [
     "Amostra preliminar de 32 casos; não estima desempenho de toda a base.",
     "Somente chamadas únicas; respostas textuais não avaliadas nesta rodada.",
     "Correspondência exata é alinhamento à referência, não correção semântica comprovada."
   ],
-  "generation_warning": "Transformers avisou que misturar generation_config e argumentos de geração será removido. Todas as 32 gerações foram concluídas. Próximas execuções devem usar apenas uma forma mantendo os valores efetivos."
+  "generation_warning": "Transformers avisou que misturar generation_config e argumentos de geração será removido. Todas as 32 gerações foram concluídas. Próximas execuções devem usar apenas uma forma mantendo os valores efetivos.",
+  "predictions_sha256": "d7c8612328725f87aca42016f025e165f6b6d7f7534699ec3b369c682347fd97"
 }

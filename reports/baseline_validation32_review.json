@@ -1,0 +1,17 @@
+{
+  "scope": "Revisão qualitativa de três casos selecionados; não altera métricas nem rótulos.",
+  "cases": [
+    {
+      "original_index": 4241,
+      "finding": "Nome alterado: GetBitcoinNews em vez de Get Bitcoin News. Datas absolutas não são determinadas por past week sem data de referência."
+    },
+    {
+      "original_index": 7704,
+      "finding": "Ferramenta de partidas escolhida em vez de Airbnb Listings, com texto extra. O ano 2025 do gabarito não aparece no pedido."
+    },
+    {
+      "original_index": 2731,
+      "finding": "Modelo usa anos positivos; gabarito usa negativos. O schema diz BCE format, mas não explicita a convenção de sinal; divergência exata confirmada, erro semântico não conclusivo apenas pelo schema."
+    }
+  ]
+}

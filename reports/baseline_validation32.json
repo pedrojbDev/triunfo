@@ -1,0 +1,533 @@
+{
+  "protocol": {
+    "phase": "base",
+    "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+    "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "seed": 42,
+    "example_ids": [
+      "ca3f7c15355f26ed35927d4e10848577646fdc2a3790eb9cba420303f37b7a68",
+      "22688cd4b1952c1c89b35662af6919576eaf05c8690c47d1f2f0c85b2bce80fb",
+      "09651707292f0c5cec4a5e6da39735a98b9d17d9324e7f4716ef1a4b09ad714c",
+      "e166c1e7a2a05a80ce31d5852bc691702604545b93cb8d852f942ad2c0c18722",
+      "5938f4d5edbce5c2fe633b8eb2bd69f6f204f96008112f5b9897e0cf05a708c1",
+      "4ff8c203483e0919ff613cd3a345ad5ed9fbdbca579362f06d8616801aa70fc4",
+      "49386ea969448cfabe4cf53ac5efbde1845b83700d4563761f38fd3d7373ad03",
+      "2f32b2d3c67a5c9d573eaf78fa9b3ff68906c7c4af4e6e8877a8aca941490eab",
+      "dff2b9110c2d2b29bf9c48e2dbdb1732036e287ba3c29a079b8cf1e5fffca34d",
+      "1f3bf700a8046b1e3baa432cc9aabb83f1d96154d2dd87f9be5bf0981226338e",
+      "cff4df60468e89e60f13a761438f1e9dcc233c94a01ba7501c85e220bb8f8375",
+      "adab1c4aa00d073eef6290876ee2ee4b724a9e6808b4ba7777a2ce367112da2c",
+      "1aeaa1e78615611929dfc51b975abe6247083eb2b562e05dcb3813dd508b1e79",
+      "be5da637794b5a2c0ee81ad913c683ff2a0c841ea27b9187fbc8f7e4f55e7081",
+      "856e7288fb50dfe07149cf00162d4352bbd0bede5ae6e628fa443f07319f027b",
+      "0a3e3ab1674bf1ec7ac8056cd50c94026a80366009bc89816967d6bdf04f4f98",
+      "09e56452d847042a90194d8c334b5bcfbcd4ec7405f1d6f43cf921c9b20d14f1",
+      "1d3f91f2ed6704516cb645a3c55c620566728fe7455bb1a020f0cb2b8047227c",
+      "47b4876283f1e5c800c4f8b81bc320518bd8aa7ec13a79ee393207f6394eb484",
+      "4d5b375e5caf852686868ae8acfc321fd41d080c34ba6cfa82924e65b2d553ea",
+      "a04ad39c0975eb573941264fc15724772cbb9365e53a58f3eea21d7fd074ca19",
+      "c0089c5b6adaa52fc0fa85efac31df4df316c30edb9486b7e248fd49d91ecfd5",
+      "09aebd89c7faf120287d6529fddcc57b717ce14bed67c75115a9b31b4927da7f",
+      "b1be685331eb9e2e44a24ec0945a4aba72d0629557a878118751e916397c9f9e",
+      "41fb12a43f77b9d639bce6f8cca487970f561bdc0011b734ed21b1cb5ea09428",
+      "d7df1f6efab5564d8fb1d9aa0baf19f2cb98d1cea3b008c2efc18289765091ce",
+      "cbac90548db1556b41c6e343e9e22dbfaa64c8bbb125291a506da00bc95b3366",
+      "d5084cf6a45912541d4003e5814fd83ef8c383774490a31855a25cacacca5ae6",
+      "852b75158e0de8b5c51685465db4369b77ff6063ea2bccbc56a25f75704148e0",
+      "47c1f92bd1709f7b2550c0c2c552235822ea344b6bc99ae5016e3c09ea10b3da",
+      "896170202db09b5aa3c2eb5a64b818de93f49f17d26db9df92f240200ede83a3",
+      "be5393005dcf029fb7c1660836202998be80b68f324d9ea43c0d79d92cf6fdb6"
+    ],
+    "instruction_sha256": "5a019eaf6e9372e075f42d701de88c091613322a05afb7010e9cd899aee76bd7",
+    "generation": {
+      "do_sample": false,
+      "num_beams": 1,
+      "max_new_tokens": 768,
+      "temperature": 1.0,
+      "top_p": 1.0,
+      "top_k": 50
+    }
+  },
+  "results": [
+    {
+      "example_id": "ca3f7c15355f26ed35927d4e10848577646fdc2a3790eb9cba420303f37b7a68",
+      "original_index": 2731,
+      "prediction": "[history.get_ancient_battles(period={\"start_year\": 58, \"end_year\": 50}, region=\"Gaul\")]",
+      "reference": "[history.get_ancient_battles(region=\"Gaul\", period={\"start_year\": -58, \"end_year\": -50})]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": false
+      },
+      "input_tokens": 284,
+      "generated_tokens": 31,
+      "generation_seconds": 3.559,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "22688cd4b1952c1c89b35662af6919576eaf05c8690c47d1f2f0c85b2bce80fb",
+      "original_index": 4241,
+      "prediction": "[GetBitcoinNews(start_string=\"2023-04-01\", end_string=\"2023-04-08\")]",
+      "reference": "[Get Bitcoin News(start_string=\"2022-02-09\", end_string=\"2022-02-16\")]",
+      "metrics": {
+        "parseable_call": false,
+        "tool_correct": false,
+        "call_exact": false
+      },
+      "input_tokens": 677,
+      "generated_tokens": 33,
+      "generation_seconds": 2.27,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "09651707292f0c5cec4a5e6da39735a98b9d17d9324e7f4716ef1a4b09ad714c",
+      "original_index": 3464,
+      "prediction": "[Get Most Watched Prostrings()]",
+      "reference": "[Get Most Watched Prostrings()]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": true
+      },
+      "input_tokens": 678,
+      "generated_tokens": 9,
+      "generation_seconds": 0.773,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "e166c1e7a2a05a80ce31d5852bc691702604545b93cb8d852f942ad2c0c18722",
+      "original_index": 1654,
+      "prediction": "[Retrieve Active Listings for a Collection(slug=\"CryptoCowboys\")]",
+      "reference": "[Retrieve Active Listings for a Collection(slug=\"CryptoCowboys\")]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": true
+      },
+      "input_tokens": 597,
+      "generated_tokens": 14,
+      "generation_seconds": 0.957,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "5938f4d5edbce5c2fe633b8eb2bd69f6f204f96008112f5b9897e0cf05a708c1",
+      "original_index": 4812,
+      "prediction": "[getPlaygroundAvailability(location=\"community center\", time=\"afternoon\")]",
+      "reference": "[getPlaygroundAvailability(location=\"community center\", time=\"afternoon\")]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": true
+      },
+      "input_tokens": 433,
+      "generated_tokens": 16,
+      "generation_seconds": 1.053,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "4ff8c203483e0919ff613cd3a345ad5ed9fbdbca579362f06d8616801aa70fc4",
+      "original_index": 2256,
+      "prediction": "[Get Supported Countries()]",
+      "reference": "[Get Supported Countries()]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": true
+      },
+      "input_tokens": 789,
+      "generated_tokens": 6,
+      "generation_seconds": 0.514,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "49386ea969448cfabe4cf53ac5efbde1845b83700d4563761f38fd3d7373ad03",
+      "original_index": 1570,
+      "prediction": "[Pitstopdataforarace(year=2026, round=1)]",
+      "reference": "[Pitstopdataforarace(year=2026, round=1)]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": true
+      },
+      "input_tokens": 382,
+      "generated_tokens": 19,
+      "generation_seconds": 1.654,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "2f32b2d3c67a5c9d573eaf78fa9b3ff68906c7c4af4e6e8877a8aca941490eab",
+      "original_index": 7398,
+      "prediction": "[deleteMBaaS(instance_id=\"MBaaS123\")]",
+      "reference": "[deleteMBaaS(instance_id=\"MBaaS123\")]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": true
+      },
+      "input_tokens": 197,
+      "generated_tokens": 14,
+      "generation_seconds": 0.868,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "dff2b9110c2d2b29bf9c48e2dbdb1732036e287ba3c29a079b8cf1e5fffca34d",
+      "original_index": 7704,
+      "prediction": "Sure, I can assist with that. To filter the listings based on your travel dates, we'll use the Get Departures by Time API. Please provide the start and end times for your stay.\n[Get Departures by Time(departureLocation=\"SFO\", startTime=\"12-20\", endTime=\"12-27\")]",
+      "reference": "[Airbnb Listings(location=\"San Francisco\", checkin=\"2025-12-20\", checkout=\"2025-12-27\")]",
+      "metrics": {
+        "parseable_call": false,
+        "tool_correct": false,
+        "call_exact": false
+      },
+      "input_tokens": 894,
+      "generated_tokens": 71,
+      "generation_seconds": 4.422,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "1f3bf700a8046b1e3baa432cc9aabb83f1d96154d2dd87f9be5bf0981226338e",
+      "original_index": 8680,
+      "prediction": "[Historical Engagement Stats(jsonp=max,min,human=true,start=-30d)]",
+      "reference": "[Historical Engagement Stats(jsonp=\"function1\", start=\"2026-01-03\", end=\"2026-02-02\", properties=\"max,min\", human=True)]",
+      "metrics": {
+        "parseable_call": false,
+        "tool_correct": false,
+        "call_exact": false
+      },
+      "input_tokens": 861,
+      "generated_tokens": 19,
+      "generation_seconds": 1.368,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "cff4df60468e89e60f13a761438f1e9dcc233c94a01ba7501c85e220bb8f8375",
+      "original_index": 3589,
+      "prediction": "I'm sorry, but I currently don't have the capability to perform searches based on CNAE codes directly through my current set of tools. However, I can guide you on how to do this manually:\n\nTo find companies in the agriculture sector in California using the CNAE code 011200, you would typically follow these steps:\n\n1. Go to the Brazilian National Institute of Statistics and Geography (IBGE) website.\n2. Navigate to the section where they list companies by CNAE code.\n3. Look for companies listed under the Agriculture category within the 011200 CNAE code.\n4. Filter further if necessary by other criteria such as location (California).\n\nIf you're looking for assistance with another task or want to try searching again, feel free to let me know!",
+      "reference": "[Company Search by CNAE or Location(page=\"1\", localizacao=\"California\", cnae=\"011200\")]",
+      "metrics": {
+        "parseable_call": false,
+        "tool_correct": false,
+        "call_exact": false
+      },
+      "input_tokens": 1092,
+      "generated_tokens": 169,
+      "generation_seconds": 11.745,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "adab1c4aa00d073eef6290876ee2ee4b724a9e6808b4ba7777a2ce367112da2c",
+      "original_index": 3210,
+      "prediction": "Sure, I can help with that. To get the most relevant market research data for anti-aging creams in the U.S., we'll need to look at the overall skincare industry trends and then specifically focus on anti-aging products. Let's start by conducting a survey to gather more detailed insights into what consumers think about anti-aging creams. \n\nCould you please confirm if this approach aligns with your goals?",
+      "reference": "[getMarketResearchData(product=\"anti-aging creams\", industry=\"skincare\", location=\"United States\")]",
+      "metrics": {
+        "parseable_call": false,
+        "tool_correct": false,
+        "call_exact": false
+      },
+      "input_tokens": 518,
+      "generated_tokens": 84,
+      "generation_seconds": 4.934,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "1aeaa1e78615611929dfc51b975abe6247083eb2b562e05dcb3813dd508b1e79",
+      "original_index": 8462,
+      "prediction": "[Get House Prices and Values(search_area=\"Manhattan\")]",
+      "reference": "[Get House Prices and Values(search_area=\"Manhattan\")]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": true
+      },
+      "input_tokens": 1032,
+      "generated_tokens": 13,
+      "generation_seconds": 0.731,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "be5da637794b5a2c0ee81ad913c683ff2a0c841ea27b9187fbc8f7e4f55e7081",
+      "original_index": 1749,
+      "prediction": "[resonance.impedanceCalculator(circuitDetails=[{\"componentType\": \"Resistor\", \"value\": 10.0}, {\"componentType\": \"Capacitor\", \"value\": 0.01}], frequencyRange=[\"2024-09-24\", \"2024-09-30\"])]",
+      "reference": "[resonance.impedanceCalculator(circuitDetails=[{\"componentType\": \"Resistor\", \"value\": 10.0}, {\"componentType\": \"Capacitor\", \"value\": 0.01}], frequencyRange=[\"2024-09-24\", \"2024-09-25\", \"2024-09-26\", \"2024-09-27\", \"2024-09-28\", \"2024-09-29\", \"2024-09-30\"])]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": false
+      },
+      "input_tokens": 380,
+      "generated_tokens": 74,
+      "generation_seconds": 2.623,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "856e7288fb50dfe07149cf00162d4352bbd0bede5ae6e628fa443f07319f027b",
+      "original_index": 7179,
+      "prediction": "[Get Current Version()]",
+      "reference": "[Get Current Version()]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": true
+      },
+      "input_tokens": 501,
+      "generated_tokens": 6,
+      "generation_seconds": 0.286,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "0a3e3ab1674bf1ec7ac8056cd50c94026a80366009bc89816967d6bdf04f4f98",
+      "original_index": 7624,
+      "prediction": "[sendRobotCommand(command=\"move_forward\", robot_id=\"RX-005\")]",
+      "reference": "[sendRobotCommand(robot_id=\"RX-005\", command=\"move_forward\")]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": true
+      },
+      "input_tokens": 569,
+      "generated_tokens": 19,
+      "generation_seconds": 0.77,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "09e56452d847042a90194d8c334b5bcfbcd4ec7405f1d6f43cf921c9b20d14f1",
+      "original_index": 11296,
+      "prediction": "[search_holidays(country=\"Japan\", year=2022)]",
+      "reference": "[search_holidays(country=\"Japan\", year=2022)]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": true
+      },
+      "input_tokens": 217,
+      "generated_tokens": 16,
+      "generation_seconds": 0.567,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "1d3f91f2ed6704516cb645a3c55c620566728fe7455bb1a020f0cb2b8047227c",
+      "original_index": 3142,
+      "prediction": "To get the top teams with the most championships from major leagues, we need to look at their championship count over recent seasons. However, there isn't an existing function that directly retrieves this data. We would typically use sports databases like ESPN or NFL.com to find such information. Since our current set of functions doesn't include fetching championship counts, let me suggest using another service for this query:\n\n[Today's VIP Football Predictions(string=\"2021-10-01\")]",
+      "reference": "[Get Team Championships by Count(sport=\"football\")]",
+      "metrics": {
+        "parseable_call": false,
+        "tool_correct": false,
+        "call_exact": false
+      },
+      "input_tokens": 1125,
+      "generated_tokens": 99,
+      "generation_seconds": 3.745,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "47b4876283f1e5c800c4f8b81bc320518bd8aa7ec13a79ee393207f6394eb484",
+      "original_index": 5908,
+      "prediction": "[Retrieve Country IATA Codes for Airports(airport_code=LAX)]",
+      "reference": "[Retrieve Country IATA Codes for Airports(airport_code=\"LAX\")]",
+      "metrics": {
+        "parseable_call": false,
+        "tool_correct": false,
+        "call_exact": false
+      },
+      "input_tokens": 510,
+      "generated_tokens": 16,
+      "generation_seconds": 0.641,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "4d5b375e5caf852686868ae8acfc321fd41d080c34ba6cfa82924e65b2d553ea",
+      "original_index": 5854,
+      "prediction": "[check_email_domain(email=\"john.doe@examplecompany.com\")]",
+      "reference": "[check_email_domain(email=\"john.doe@examplecompany.com\")]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": true
+      },
+      "input_tokens": 190,
+      "generated_tokens": 14,
+      "generation_seconds": 0.488,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "a04ad39c0975eb573941264fc15724772cbb9365e53a58f3eea21d7fd074ca19",
+      "original_index": 2466,
+      "prediction": "[calculate_discount_amount(discount_percentage=25, price=120)]",
+      "reference": "[calculate_discount_amount(price=120.0, discount_percentage=25.0)]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": false
+      },
+      "input_tokens": 219,
+      "generated_tokens": 18,
+      "generation_seconds": 0.655,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "c0089c5b6adaa52fc0fa85efac31df4df316c30edb9486b7e248fd49d91ecfd5",
+      "original_index": 9170,
+      "prediction": "Sure, I can help with that. Here's the molecular formula for Ethanol using the available tool:\n\n```json\n[getMolecularFormula(compound_name=\"Ethanol\")]\n```",
+      "reference": "[getMolecularFormula(compound_name=\"Ethanol\")]",
+      "metrics": {
+        "parseable_call": false,
+        "tool_correct": false,
+        "call_exact": false
+      },
+      "input_tokens": 445,
+      "generated_tokens": 38,
+      "generation_seconds": 1.38,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "09aebd89c7faf120287d6529fddcc57b717ce14bed67c75115a9b31b4927da7f",
+      "original_index": 11009,
+      "prediction": "[gitBranchComparer(branch1=\"feature\", branch2=\"development\", repoUrl=\"https://github.com/user/project\")]",
+      "reference": "[gitBranchComparer(repoUrl=\"https://github.com/user/project\", branch1=\"feature\", branch2=\"development\")]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": true
+      },
+      "input_tokens": 553,
+      "generated_tokens": 25,
+      "generation_seconds": 1.022,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "b1be685331eb9e2e44a24ec0945a4aba72d0629557a878118751e916397c9f9e",
+      "original_index": 10191,
+      "prediction": "[getPublicTransportSchedule(location=\"Tokyo\")]",
+      "reference": "[getPublicTransportSchedule(location=\"Tokyo\")]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": true
+      },
+      "input_tokens": 192,
+      "generated_tokens": 11,
+      "generation_seconds": 0.399,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "41fb12a43f77b9d639bce6f8cca487970f561bdc0011b734ed21b1cb5ea09428",
+      "original_index": 2734,
+      "prediction": "Sure, I can help with that. Let's break down the data:\n\n- **Email**: Usage frequency = 40 times/day, Average duration = 5 minutes/session.\n- **Instant Messaging**: Usage frequency = 100 times/day, Average duration = 2 minutes/session.\n- **Face-to-Face Meetings**: Usage frequency = 3 times/day, Duration = 30 minutes/session.\n\nFirst, we'll calculate the total time spent on email communications:\n\\[ \\text{Total time (email)} = \\text{Usage frequency} \\times \\text{Average duration} = 40 \\times 5 = 200 \\text{ minutes/day} \\]\n\nNext, we'll calculate the total time spent on instant messaging communications:\n\\[ \\text{Total time (IM)} = \\text{Usage frequency} \\times \\text{Average duration} = 100 \\times 2 = 200 \\text{ minutes/day} \\]\n\nFinally, we'll calculate the total time spent on face-to-face meetings:\n\\[ \\text{Total time (face-to-face)} = \\text{Usage frequency} \\times \\text{Duration} = 3 \\times 30 = 90 \\text{ minutes/day} \\]\n\nNow, let's sum these up to get the total daily communication time:\n\\[ \\text{Total daily communication time} = 200 + 200 + 90 = 490 \\text{ minutes/day} \\]\n\nTo find the overall communication efficiency, we would typically compare this to some baseline standard or expected level of efficiency. However, since there isn't a specific baseline provided, we can just state the total daily communication time as calculated above.\n\nThe total daily communication time is 490 minutes.",
+      "reference": "[communication_flow_analysis.evaluate_communication_efficiency(communicationMethods=[{\"method\": \"Email\", \"usageStats\": {\"usageFrequency\": 40, \"averageDuration\": 5}}, {\"method\": \"Instant Messaging\", \"usageStats\": {\"usageFrequency\": 100, \"averageDuration\": 2}}, {\"method\": \"Face-to-Face\", \"usageStats\": {\"usageFrequency\": 3, \"averageDuration\": 30}}])]",
+      "metrics": {
+        "parseable_call": false,
+        "tool_correct": false,
+        "call_exact": false
+      },
+      "input_tokens": 420,
+      "generated_tokens": 371,
+      "generation_seconds": 13.111,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "d7df1f6efab5564d8fb1d9aa0baf19f2cb98d1cea3b008c2efc18289765091ce",
+      "original_index": 2176,
+      "prediction": "[StreamAnalyzer.processEvent(event=\"{'userID': '12345', 'eventType': 'login', 'timestamp': '2023-10-05T14:12:33.001Z'}\", eventHandler=\"latestHandler\")]",
+      "reference": "[StreamAnalyzer.processEvent(event=\"{\\\"userID\\\": \\\"12345\\\", \\\"eventType\\\": \\\"login\\\", \\\"timestamp\\\": \\\"2023-10-05T14:12:33.001Z\\\"}\", eventHandler=\"latestHandler\", processingOptions=[])]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": false
+      },
+      "input_tokens": 384,
+      "generated_tokens": 60,
+      "generation_seconds": 2.128,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "cbac90548db1556b41c6e343e9e22dbfaa64c8bbb125291a506da00bc95b3366",
+      "original_index": 5664,
+      "prediction": "[getMalayalamWord(word=\"kutti\")]",
+      "reference": "[getMalayalamWord(word=\"kutti\")]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": true
+      },
+      "input_tokens": 201,
+      "generated_tokens": 13,
+      "generation_seconds": 0.469,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "d5084cf6a45912541d4003e5814fd83ef8c383774490a31855a25cacacca5ae6",
+      "original_index": 8726,
+      "prediction": "[Fixtures By Date(string=\"2026-04-20\")]",
+      "reference": "[Fixtures By Date(string=\"2026-04-20\")]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": true
+      },
+      "input_tokens": 710,
+      "generated_tokens": 19,
+      "generation_seconds": 0.839,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "852b75158e0de8b5c51685465db4369b77ff6063ea2bccbc56a25f75704148e0",
+      "original_index": 7847,
+      "prediction": "[Get Transaction Details(hash=\"0x123abcd456efg7890hijklmn123pqrst456uvwxyz\")]",
+      "reference": "[Get Transaction Details(hash=\"0x123abcd456efg7890hijklmn123pqrst456uvwxyz\", symbol=\"ETH\")]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": false
+      },
+      "input_tokens": 609,
+      "generated_tokens": 35,
+      "generation_seconds": 1.322,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "47c1f92bd1709f7b2550c0c2c552235822ea344b6bc99ae5016e3c09ea10b3da",
+      "original_index": 7696,
+      "prediction": "[Get MLB Player List()]",
+      "reference": "[Get MLB Player List()]",
+      "metrics": {
+        "parseable_call": true,
+        "tool_correct": true,
+        "call_exact": true
+      },
+      "input_tokens": 345,
+      "generated_tokens": 7,
+      "generation_seconds": 0.275,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "896170202db09b5aa3c2eb5a64b818de93f49f17d26db9df92f240200ede83a3",
+      "original_index": 5660,
+      "prediction": "Sure! Here are five examples of Shower Thoughts:\n\n1. I was brushing my teeth and suddenly realized how much time I spend on this mundane activity each day.\n2. While waiting for my coffee to brew, I noticed a caterpillar crawling up the side of the pot lid.\n3. As I was folding laundry, I had an idea for a new business venture while thinking about which fabrics would be best suited for different types of clothing.\n4. During a long commute, I started thinking about all the things I wish I could do differently if I were younger.\n5. After taking a bath, I found myself pondering over the meaning of life and existence.\n\nI hope these examples help you enter the \"shower mode\" and start generating your own unique thoughts!",
+      "reference": "[ShowerThoughts API(num=5)]",
+      "metrics": {
+        "parseable_call": false,
+        "tool_correct": false,
+        "call_exact": false
+      },
+      "input_tokens": 639,
+      "generated_tokens": 155,
+      "generation_seconds": 9.591,
+      "reached_token_limit": false
+    },
+    {
+      "example_id": "be5393005dcf029fb7c1660836202998be80b68f324d9ea43c0d79d92cf6fdb6",
+      "original_index": 6489,
+      "prediction": "To enforce these data governance policies as specified:\n\n```python\n[\n  {\n    \"policies\": [\n      {\n        \"dataStores\": [\"SQL Database\", \"File Storage\"],\n        \"departments\": [\"HR\", \"Finance\"],\n        \"policyId\": \"POL1001\"\n      }\n    ]\n  },\n  {\n    \"policies\": [\n      {\n        \"dataStores\": [\"NoSQL Database\", \"File Storage\"],\n        \"departments\": [\"IT\"],\n        \"policyId\": \"POL1002\"\n      }\n    ]\n  },\n  {\n    \"policies\": [\n      {\n        \"dataStores\": [\"*\"],\n        \"departments\": [\"Sales\"],\n        \"policyId\": \"POL1003\"\n      }\n    ]\n  }\n]\n```\n\nThis list contains three dictionaries, each representing a policy that has been enforced according to the provided specifications. Each dictionary includes the `dataStores`, `departments`, and `policyId` fields necessary for enforcing the respective policy.",
+      "reference": "[DataGovernance.policyEnforcement(policies=[{\"policyId\": \"POL1001\", \"departments\": [\"HR\", \"Finance\"], \"dataStores\": [\"SQL Database\", \"File Storage\"]}, {\"policyId\": \"POL1002\", \"departments\": [\"IT\"], \"dataStores\": [\"NoSQL Database\", \"File Storage\"]}, {\"policyId\": \"POL1003\", \"departments\": [\"Sales\"], \"dataStores\": [\"SQL Database\", \"NoSQL Database\", \"File Storage\"]}])]",
+      "metrics": {
+        "parseable_call": false,
+        "tool_correct": false,
+        "call_exact": false
+      },
+      "input_tokens": 413,
+      "generated_tokens": 204,
+      "generation_seconds": 7.209,
+      "reached_token_limit": false
+    }
+  ]
+}
