@@ -17,9 +17,32 @@ tags:
 
 # Triunfo
 
-Adaptador LoRA para **Qwen2.5-1.5B-Instruct**, treinado para gerar uma chamada de ferramenta a partir de um pedido e de descrições de funções. O formato é `[tool_name(argument=value)]`, com argumentos em sintaxe literal Python. Os nomes podem incluir espaços ou pontos.
 
-Este repositório contém adaptadores e tokenizer, não uma cópia completa dos pesos originais. Código, dados preparados e avaliação: [pedrojbDev/triunfo](https://github.com/pedrojbDev/triunfo).
+Triunfo é um modelo de linguagem ajustado para transformar pedidos em chamadas de funções. Esta publicação contém o adaptador LoRA para **Qwen2.5-1.5B-Instruct** e o tokenizer.
+
+## O que o modelo faz
+
+O Triunfo recebe **um pedido do usuário e uma lista de funções disponíveis**, com a descrição de cada função e os dados que ela exige. Ele foi treinado para escolher a função adequada e preencher seus argumentos com as informações do pedido.
+
+Por exemplo, neste caso real da validação, o usuário pediu em inglês:
+
+> I bought a jacket for $120, and I was told there is a 25% discount. Could you please calculate the discount amount for me?
+
+Com uma função disponível para calcular descontos, o modelo gerou:
+
+```text
+[calculate_discount_amount(price=120.0, discount_percentage=25.0)]
+```
+
+Ele identificou o preço e o percentual e preparou a chamada. **A aplicação que usa o modelo é responsável por validar essa saída e executar a função**, que faria o cálculo do desconto.
+
+Essa tarefa é chamada de *tool calling*: transformar um pedido em uma instrução para um programa. É um componente de assistentes que precisam consultar sistemas ou realizar operações por funções. Neste projeto, a avaliação termina na chamada gerada; nenhuma API real foi conectada.
+
+O experimento avalia pedidos em inglês e uma chamada por resposta. O treino também inclui respostas que pedem informações ou explicam que uma ferramenta não atende à tarefa, mas a avaliação encontrou falhas nesses comportamentos; eles não são garantidos.
+
+O formato de saída é `[tool_name(argument=value)]`, com valores em sintaxe literal Python; nomes de ferramentas podem conter espaços ou pontos. O adaptador precisa dos pesos do Qwen original para funcionar.
+
+Código, preparação dos dados e avaliação: [pedrojbDev/triunfo](https://github.com/pedrojbDev/triunfo).
 
 ## Resultado no teste reservado
 

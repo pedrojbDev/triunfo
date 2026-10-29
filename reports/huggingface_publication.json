@@ -1,13 +1,21 @@
 {
   "repo_id": "pedrojb04/triunfo",
   "url": "https://huggingface.co/pedrojb04/triunfo",
-  "commit": "562be60212261693ba3670a5c85f015ad5061809",
-  "commit_url": "https://huggingface.co/pedrojb04/triunfo/commit/562be60212261693ba3670a5c85f015ad5061809",
+  "commit": "f90964131b7e50a11c1ef0372c936fffd11fb2f4",
+  "commit_url": "https://huggingface.co/pedrojb04/triunfo/commit/f90964131b7e50a11c1ef0372c936fffd11fb2f4",
   "public": true,
   "files_verified": 11,
   "adapter_sha256": "e7fd91061c8f1862cb682608c5baba4ac9002f9f12cc3914c2f1546bb1752640",
   "base_model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
   "verification": {
+    "LICENSE": {
+      "algorithm": "git_blob_sha1",
+      "digest": "d645695673349e3947e8e5ae42332d0ac3164cd7"
+    },
+    "README.md": {
+      "algorithm": "git_blob_sha1",
+      "digest": "348efd65489415bfe31f65050c671c6faeadf69d"
+    },
     "adapter_config.json": {
       "algorithm": "git_blob_sha1",
       "digest": "61e512444ed9c2fddf6e4ccfb7b16196f67d473b"
@@ -20,6 +28,18 @@
       "algorithm": "git_blob_sha1",
       "digest": "bdf7919a96cfe43d50914a007b9c0877bd0ec27e"
     },
+    "evaluation_results.json": {
+      "algorithm": "git_blob_sha1",
+      "digest": "785964103e4a713709aeea387520edd3f99c972d"
+    },
+    "experiment_config.json": {
+      "algorithm": "git_blob_sha1",
+      "digest": "1f2a29a3bdb03ffee1d0fbd3e4f7ed7b432222c5"
+    },
+    "generation_config.json": {
+      "algorithm": "git_blob_sha1",
+      "digest": "f6ecbc2b218df8953e369f772c968917c47544e2"
+    },
     "tokenizer.json": {
       "algorithm": "sha256",
       "digest": "3fd169731d2cbde95e10bf356d66d5997fd885dd8dbb6fb4684da3f23b2585d8"
@@ -28,31 +48,19 @@
       "algorithm": "git_blob_sha1",
       "digest": "770e41d6c92519d525eede4cbcf3ba27f6425311"
     },
-    "README.md": {
-      "algorithm": "git_blob_sha1",
-      "digest": "ce50646b33b550cb8dd84ae1d3de4dfc29ddff99"
-    },
-    "LICENSE": {
-      "algorithm": "git_blob_sha1",
-      "digest": "d645695673349e3947e8e5ae42332d0ac3164cd7"
-    },
-    "experiment_config.json": {
-      "algorithm": "git_blob_sha1",
-      "digest": "1f2a29a3bdb03ffee1d0fbd3e4f7ed7b432222c5"
-    },
-    "evaluation_results.json": {
-      "algorithm": "git_blob_sha1",
-      "digest": "785964103e4a713709aeea387520edd3f99c972d"
-    },
-    "generation_config.json": {
-      "algorithm": "git_blob_sha1",
-      "digest": "f6ecbc2b218df8953e369f772c968917c47544e2"
-    },
     "publication_manifest.json": {
       "algorithm": "git_blob_sha1",
-      "digest": "f70ccd8ccb146165048b9580bde56a18b7106326"
+      "digest": "17c82f4fb867786136701e8fd835a5a4215e9341"
     }
   },
   "model_executed_locally": false,
-  "weights_saved_as_local_file": false
+  "weights_saved_as_local_file": false,
+  "initial_commit": "562be60212261693ba3670a5c85f015ad5061809",
+  "documentation_updates": [
+    {
+      "commit": "f90964131b7e50a11c1ef0372c936fffd11fb2f4",
+      "weights_changed": false,
+      "purpose": "Clarificar entradas, saída e responsabilidade de execução com exemplo real da validação."
+    }
+  ]
 }

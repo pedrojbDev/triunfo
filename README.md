@@ -1,8 +1,27 @@
 # Triunfo
 
-Fine-tuning de um Qwen2.5 de 1,5 bilhão de parâmetros para transformar pedidos em linguagem natural em chamadas de ferramentas.
 
-O desafio é escolher a função disponível, respeitar seu formato e extrair os argumentos do pedido. O Triunfo compara o mesmo modelo antes e depois de um ajuste com LoRA, com dados e protocolo versionados.
+Modelo de linguagem ajustado para transformar pedidos em chamadas de funções, escolhendo a ferramenta e organizando os dados que ela precisa receber.
+
+## O que o modelo faz
+
+O Triunfo recebe **um pedido do usuário e uma lista de funções disponíveis**, com a descrição de cada função e os dados que ela exige. Ele foi treinado para escolher a função adequada e preencher seus argumentos com as informações do pedido.
+
+Por exemplo, neste caso real da validação, o usuário pediu em inglês:
+
+> I bought a jacket for $120, and I was told there is a 25% discount. Could you please calculate the discount amount for me?
+
+Com uma função disponível para calcular descontos, o modelo gerou:
+
+```text
+[calculate_discount_amount(price=120.0, discount_percentage=25.0)]
+```
+
+Ele identificou o preço e o percentual e preparou a chamada. **A aplicação que usa o modelo é responsável por validar essa saída e executar a função**, que faria o cálculo do desconto.
+
+Essa tarefa é chamada de *tool calling*: transformar um pedido em uma instrução para um programa. É um componente de assistentes que precisam consultar sistemas ou realizar operações por funções. Neste projeto, a avaliação termina na chamada gerada; nenhuma API real foi conectada.
+
+O experimento avalia pedidos em inglês e uma chamada por resposta. O treino também inclui respostas que pedem informações ou explicam que uma ferramenta não atende à tarefa, mas a avaliação encontrou falhas nesses comportamentos; eles não são garantidos.
 
 ## Resultado no teste reservado
 
