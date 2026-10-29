@@ -1,0 +1,15 @@
+{
+  "archive_sha256": "605453feab53717d3003424596ad99c4b925a779ddbc0664e534a50f1f9e5b41",
+  "cases_verified_per_condition": 558,
+  "single_call_cases_verified": 444,
+  "textual_cases_verified": 114,
+  "frozen_protocol_bytes_match": true,
+  "same_input_token_counts_verified": true,
+  "all_references_and_metrics_recomputed": true,
+  "original_base_results_preserved": true,
+  "original_finetuned_prefix_preserved": 147,
+  "net_exact_gain": 107,
+  "exact_gain_percentage_points": 24.0990990990991,
+  "inference_executed_locally": false,
+  "evaluation_source_matches_frozen_commit": true
+}

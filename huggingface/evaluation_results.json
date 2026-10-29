@@ -1,0 +1,43 @@
+{
+  "scope": "reserved_test_all_formats",
+  "freeze_sha256": "093280a099dd8b60ce7346c7ff2b11c783e20860f568a4a7997d81762d88dd8f",
+  "total_cases_per_condition": 558,
+  "single_call_cases_scored": 444,
+  "single_call_counts": {
+    "base": {
+      "parseable_call": 254,
+      "tool_correct": 251,
+      "call_exact": 173
+    },
+    "finetuned": {
+      "parseable_call": 416,
+      "tool_correct": 412,
+      "call_exact": 280
+    }
+  },
+  "single_call_rates": {
+    "base": {
+      "parseable_call": 0.5721,
+      "tool_correct": 0.5653,
+      "call_exact": 0.3896
+    },
+    "finetuned": {
+      "parseable_call": 0.9369,
+      "tool_correct": 0.9279,
+      "call_exact": 0.6306
+    }
+  },
+  "exact_improved_cases": 128,
+  "exact_regressed_cases": 21,
+  "textual_cases_observed_without_semantic_score": 114,
+  "known_single_call_outputs_on_textual_cases": {
+    "base": 31,
+    "finetuned": 15
+  },
+  "reached_token_limit": {
+    "base": 0,
+    "finetuned": 0
+  },
+  "test_used": true,
+  "new_training_performed": false
+}

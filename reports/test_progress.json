@@ -1,11 +1,11 @@
 {
-  "status": "interrupted_gpu_quota",
-  "complete": false,
+  "status": "complete",
+  "complete": true,
   "base_completed": 558,
-  "finetuned_completed": 147,
-  "finetuned_remaining": 411,
+  "finetuned_completed": 558,
+  "finetuned_remaining": 0,
   "freeze_sha256": "093280a099dd8b60ce7346c7ff2b11c783e20860f568a4a7997d81762d88dd8f",
-  "final_metrics_computed": false,
+  "final_metrics_computed": true,
   "progress_verified_in_drive": true,
   "files": {
     "finetuned_test558.json": "7c7346af3b7780859afee9479caf677aa98279e6eb58f53c67c4547dace2a3fd",

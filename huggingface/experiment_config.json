@@ -1,0 +1,55 @@
+{
+  "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "dataset": "Team-ACE/ToolACE",
+  "dataset_revision": "6bda777c88d21e5a204703c1ee45597a8fa4f734",
+  "train_examples": 4469,
+  "validation_examples": 559,
+  "test_examples": 558,
+  "split_seed": 42,
+  "lora": {
+    "rank": 16,
+    "alpha": 32,
+    "dropout": 0.05,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj"
+    ]
+  },
+  "epochs": 1,
+  "optimizer_steps": 559,
+  "learning_rate": 0.0001,
+  "warmup_steps": 28,
+  "weight_decay": 0.01,
+  "lr_scheduler_type": "linear",
+  "physical_batch_size": 1,
+  "gradient_accumulation_steps": 8,
+  "max_sequence_length": 2048,
+  "loss_scope": "assistant_response_and_chat_ending",
+  "gradient_checkpointing": true,
+  "mixed_precision": "float16",
+  "adapter_dtype": "float32",
+  "adapter_sha256": "e7fd91061c8f1862cb682608c5baba4ac9002f9f12cc3914c2f1546bb1752640",
+  "instruction_sha256": "5a019eaf6e9372e075f42d701de88c091613322a05afb7010e9cd899aee76bd7",
+  "generation": {
+    "do_sample": false,
+    "num_beams": 1,
+    "max_new_tokens": 768,
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "top_k": 50
+  },
+  "eos_token_id": [
+    151645,
+    151643
+  ],
+  "pad_token_id": 151643,
+  "train_runtime_seconds": 2096.249,
+  "gpu_peak_allocated_gib": 6.02,
+  "gpu": "Tesla T4",
+  "quantization": null,
+  "source_repository": "https://github.com/pedrojbDev/triunfo",
+  "protocol_git_commit": "249636bde59aa54c71daff69cde96fc564dc61b1"
+}
