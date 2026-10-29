@@ -1,0 +1,20 @@
+{
+  "repo_id": "pedrojb04/triunfo",
+  "repo_type": "model",
+  "public": true,
+  "adapter_sha256": "e7fd91061c8f1862cb682608c5baba4ac9002f9f12cc3914c2f1546bb1752640",
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "source_backup_sha256": "ab45a91497d726b375d6c024ffb0f0f1f8b743982b339e75c0f4204701bae197",
+  "files": {
+    "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "README.md": "fdf6e13b41c5127b41744606421c745f32fee513cb7ddd29f8ca4286c3c3c20c",
+    "adapter_config.json": "f2d3b5c06ba918274138c088bf41a99a2554f4983a24b34c43236711f22d761b",
+    "adapter_model.safetensors": "e7fd91061c8f1862cb682608c5baba4ac9002f9f12cc3914c2f1546bb1752640",
+    "chat_template.jinja": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+    "evaluation_results.json": "a219ed5449ff8da34f9f6b8d3904a853182aaef8b64398f3ced682f204c568d5",
+    "experiment_config.json": "d62d17b3a93bb2c455b7bd7f6cfd99025b13a8e20839b306d8e3aa6659f7eff7",
+    "generation_config.json": "468f60ef4743f5cdb933f624284608a3ff410cbc670141fe979b93ecff5cc793",
+    "tokenizer.json": "3fd169731d2cbde95e10bf356d66d5997fd885dd8dbb6fb4684da3f23b2585d8",
+    "tokenizer_config.json": "04b1682c59acbd057f4c9072297faa73d56fc9de053094c659cdb4c464f58f86"
+  }
+}

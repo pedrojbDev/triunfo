@@ -27,3 +27,9 @@ A retomada de sessão carrega o adaptador já treinado com `PeftModel.from_pretr
 O teste final inclui 558 pares. As métricas de chamada usam 444 pares; os outros 114 têm observações descritivas. Os arquivos completos estão em `reports/base_test558.json` e `reports/finetuned_test558.json`.
 
 A inferência greedy reduz a variação de amostragem, mas não garante identidade bit a bit entre GPUs, versões e implementações numéricas diferentes. Não há imagem de ambiente nem garantia de acesso contínuo a GPU gratuita.
+
+## Publicação verificada
+
+Adaptador disponível em https://huggingface.co/pedrojb04/triunfo, commit `562be60212261693ba3670a5c85f015ad5061809`. A publicação inicial usou a autenticação local do proprietário e o SDK do Hub para transferir bytes em memória a partir do ZIP preservado no Drive. Nenhum modelo foi executado e nenhum arquivo de pesos foi gravado no computador local. Os caches temporários de transferência foram removidos.
+
+O SDK conferiu os arquivos remotos pelo SHA256 do conteúdo para LFS ou pelo hash Git do blob para arquivos pequenos. O SHA256 do adaptador coincide com o protocolo fixado antes do teste. O notebook 04 apresenta uma alternativa de publicação pelo Colab; não precisou ser executado para esta publicação.

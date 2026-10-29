@@ -65,7 +65,7 @@ Para verificar o avaliador, sem baixar modelos:
 python -m unittest discover -s tests -v
 ```
 
-O código de avaliação fica em [src/triunfo/evaluation.py](src/triunfo/evaluation.py). Os pesos ficam fora do Git. A ficha preparada para `pedrojb04/triunfo` está em [huggingface/README.md](huggingface/README.md); a publicação ainda depende de autenticação e confirmação do envio.
+O código de avaliação fica em [src/triunfo/evaluation.py](src/triunfo/evaluation.py). Os pesos ficam fora do Git. O adaptador está publicado em [pedrojb04/triunfo](https://huggingface.co/pedrojb04/triunfo). A [ficha do modelo](huggingface/README.md) e o [registro de publicação](reports/huggingface_publication.json) acompanham os resultados. Os arquivos remotos foram conferidos por hash, com os mesmos pesos do teste final.
 
 ## Limitações observadas
 

@@ -24,3 +24,8 @@
 - Arquivos de piloto e comparação em 32 casos documentam decisões anteriores; o número de destaque do projeto vem do teste final.
 
 O teste e o leitor mantêm comparação JSON estrita. Não editar referências ou excluir falhas depois de observar os resultados. Os dados brutos e os pesos não ficam nesta pasta.
+
+## Publicação
+
+- `huggingface_publication.json`: URL pública, commit e verificação dos arquivos remotos; pesos iguais aos avaliados.
+- `huggingface/publication_manifest.json`, na raiz do projeto: manifesto dos arquivos publicados e hash do backup de origem.
